@@ -1,12 +1,12 @@
 export default {
     expo: {
-        name: 'Sithi5BaseExpoTemplate',
+        name: 'swiftycompanion',
         description: 'A basic expo template using typescript.',
-        slug: 'Sithi5BaseExpoTemplate',
+        slug: 'swiftycompanion',
         version: '1.0.0',
         orientation: 'portrait',
         icon: './assets/images/icon.png',
-        scheme: 'sithi5baseexpotemplate',
+        scheme: 'swiftycompanion',
         userInterfaceStyle: 'automatic',
         splash: {
             image: './assets/images/splash.png',
@@ -19,14 +19,14 @@ export default {
         assetBundlePatterns: ['**/*'],
         ios: {
             supportsTablet: true,
-            bundleIdentifier: 'com.sithi5baseexpotemplate',
+            bundleIdentifier: 'com.swiftycompanion',
         },
         android: {
             adaptiveIcon: {
                 foregroundImage: './assets/images/adaptive-icon.png',
                 backgroundColor: '#ffffff',
             },
-            package: 'com.sithi5baseexpotemplate',
+            package: 'com.swiftycompanion',
             versionCode: 1,
         },
         web: {

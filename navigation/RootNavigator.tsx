@@ -12,8 +12,6 @@ import { RootStackParamList } from './types';
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function RootNavigator() {
-    //const user = useAppSelector((state) => state.user);
-
     return (
         <Stack.Navigator
             screenOptions={{

@@ -6,23 +6,16 @@
 import { DarkTheme, DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import { ColorSchemeName } from 'react-native';
-import { useAppSelector } from 'redux_toolkit/hooks';
+import linking from './LinkingConfiguration';
 import RootNavigator from './RootNavigator';
 
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
-    const user = useAppSelector((state) => state.user);
-
-    if (user.logged) {
-        return (
-            <NavigationContainer theme={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-                <RootNavigator />
-            </NavigationContainer>
-        );
-    } else {
-        return (
-            <NavigationContainer theme={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-                <RootNavigator />
-            </NavigationContainer>
-        );
-    }
+    return (
+        <NavigationContainer
+            linking={linking}
+            theme={colorScheme === 'dark' ? DarkTheme : DefaultTheme}
+        >
+            <RootNavigator />
+        </NavigationContainer>
+    );
 }

@@ -1,0 +1,25 @@
+{
+  "cli": {
+    "version": ">= 0.47.0"
+  },
+  "build": {
+    "preview": {
+      "developmentClient": true,
+      "releaseChannel": "preview",
+      "distribution": "internal"
+    },
+    "preview_apk": {
+      "distribution": "internal",
+      "releaseChannel": "preview",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "releaseChannel": "prod-v1"
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

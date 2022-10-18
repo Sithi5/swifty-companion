@@ -3,13 +3,16 @@
     "version": ">= 0.47.0"
   },
   "build": {
-    "preview": {
+    "internal": {
       "developmentClient": true,
-      "releaseChannel": "preview",
       "distribution": "internal"
     },
+    "preview": {
+      "extends": "internal",
+      "releaseChannel": "preview"
+    },
     "preview_apk": {
-      "distribution": "internal",
+      "extends": "internal",
       "releaseChannel": "preview",
       "android": {
         "buildType": "apk"

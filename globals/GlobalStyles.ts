@@ -16,233 +16,174 @@ const smallTextSize = 10;
 const xSmallTextSize = 8;
 const xxSmallTextSize = 7;
 
-// FONTS
-const thinFont = 'azo-sans-thin';
-const lightFont = 'azo-sans-light';
-const regularFont = 'azo-sans-regular';
-const mediumFont = 'azo-sans-medium';
-const boldFont = 'azo-sans-bold';
-const blackFont = 'azo-sans-black';
-
 const h1Styles = {
     h1: {
         fontSize: h1Size,
-        fontFamily: blackFont,
     },
     h1Bold: {
         fontSize: h1Size,
-        fontFamily: boldFont,
     },
     h1Medium: {
         fontSize: h1Size,
-        fontFamily: mediumFont,
     },
     h1Regular: {
         fontSize: h1Size,
-        fontFamily: regularFont,
     },
     h1Light: {
         fontSize: h1Size,
-        fontFamily: lightFont,
     },
     h1Thin: {
         fontSize: h1Size,
-        fontFamily: thinFont,
     },
 };
 
 const h2Styles = {
     h2Black: {
         fontSize: h2Size,
-        fontFamily: blackFont,
     },
     h2: {
         fontSize: h2Size,
-        fontFamily: boldFont,
     },
     h2Medium: {
         fontSize: h2Size,
-        fontFamily: mediumFont,
     },
     h2Regular: {
         fontSize: h2Size,
-        fontFamily: regularFont,
     },
     h2Light: {
         fontSize: h2Size,
-        fontFamily: lightFont,
     },
     h2Thin: {
         fontSize: h2Size,
-        fontFamily: thinFont,
     },
 };
 
 const h3Styles = {
     h3Black: {
         fontSize: h3Size,
-        fontFamily: blackFont,
     },
     h3Bold: {
         fontSize: h3Size,
-        fontFamily: boldFont,
     },
     h3: {
         fontSize: h3Size,
-        fontFamily: mediumFont,
     },
     h3Regular: {
         fontSize: h3Size,
-        fontFamily: regularFont,
     },
     h3Light: {
         fontSize: h3Size,
-        fontFamily: lightFont,
     },
     h3Thin: {
         fontSize: h3Size,
-        fontFamily: thinFont,
     },
 };
 
 const h4Styles = {
     h4Black: {
         fontSize: h4Size,
-        fontFamily: blackFont,
     },
     h4Bold: {
         fontSize: h4Size,
-        fontFamily: boldFont,
     },
     h4Medium: {
         fontSize: h4Size,
-        fontFamily: mediumFont,
     },
     h4: {
         fontSize: h4Size,
-        fontFamily: regularFont,
     },
     h4Light: {
         fontSize: h4Size,
-        fontFamily: lightFont,
     },
     h4Thin: {
         fontSize: h4Size,
-        fontFamily: thinFont,
     },
 };
 
 const bodyStyles = {
     smallBodyThin: {
         fontSize: smallBodySize,
-        fontFamily: thinFont,
     },
     smallBody: {
         fontSize: smallBodySize,
-        fontFamily: lightFont,
     },
     smallBodyRegular: {
         fontSize: smallBodySize,
-        fontFamily: regularFont,
     },
     smallBodyMedium: {
         fontSize: smallBodySize,
-        fontFamily: mediumFont,
     },
     smallBodyBold: {
         fontSize: smallBodySize,
-        fontFamily: boldFont,
     },
     smallBodyBlack: {
         fontSize: smallBodySize,
-        fontFamily: blackFont,
     },
     bodyThin: {
         fontSize: bodySize,
-        fontFamily: thinFont,
     },
     bodyLight: {
         fontSize: bodySize,
-        fontFamily: lightFont,
     },
     body: {
         fontSize: bodySize,
-        fontFamily: regularFont,
     },
     bodyMedium: {
         fontSize: bodySize,
-        fontFamily: mediumFont,
     },
     bodyBold: {
         fontSize: bodySize,
-        fontFamily: boldFont,
     },
     bodyBlack: {
         fontSize: bodySize,
-        fontFamily: blackFont,
     },
     largeBodyThin: {
         fontSize: largeBodySize,
-        fontFamily: thinFont,
     },
     largeBodyLight: {
         fontSize: largeBodySize,
-        fontFamily: lightFont,
     },
     largeBodyRegular: {
         fontSize: largeBodySize,
-        fontFamily: regularFont,
     },
     largeBody: {
         fontSize: largeBodySize,
-        fontFamily: mediumFont,
     },
     largeBodyBold: {
         fontSize: largeBodySize,
-        fontFamily: boldFont,
     },
     largeBodyBlack: {
         fontSize: largeBodySize,
-        fontFamily: blackFont,
     },
 };
 
 const lighTextStyles = {
     smallLightText: {
         fontSize: smallTextSize,
-        fontFamily: lightFont,
     },
     smallText: {
         fontSize: smallTextSize,
-        fontFamily: regularFont,
     },
     smallBoldText: {
         fontSize: smallTextSize,
-        fontFamily: boldFont,
     },
     xSmallLightText: {
         fontSize: xSmallTextSize,
-        fontFamily: lightFont,
     },
     xSmallText: {
         fontSize: xSmallTextSize,
-        fontFamily: regularFont,
     },
     xSmallBoldText: {
         fontSize: xSmallTextSize,
-        fontFamily: boldFont,
     },
     xxSmallLightText: {
         fontSize: xxSmallTextSize,
-        fontFamily: lightFont,
     },
     xxSmallText: {
         fontSize: xxSmallTextSize,
-        fontFamily: regularFont,
     },
     xxSmallBoldText: {
         fontSize: xxSmallTextSize,
-        fontFamily: boldFont,
     },
 };
 
@@ -353,4 +294,4 @@ const globalStyles = StyleSheet.create({
     ...lighTextStyles,
 });
 
-export { globalStyles, defaultMargin, defaultPadding, defaultBorderRadius, regularFont };
+export { globalStyles, defaultMargin, defaultPadding, defaultBorderRadius };

@@ -3,13 +3,13 @@ import Env from 'config/Env';
 import { useAuthRequest } from 'expo-auth-session';
 import * as Linking from 'expo-linking';
 import * as WebBrowser from 'expo-web-browser';
-import { RootTabScreenProps } from 'navigation/types';
+import { RootStackScreenProps } from 'navigation/types';
 import React from 'react';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 WebBrowser.maybeCompleteAuthSession();
 
-export default function Home({ navigation }: RootTabScreenProps<'Home'>) {
+export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
     const discovery = { authorizationEndpoint: 'https://api.intra.42.fr/oauth/authorize' };
     const redirectUrl = Linking.createURL('home');
     const [request, response, promptAsync] = useAuthRequest(

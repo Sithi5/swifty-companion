@@ -1,5 +1,5 @@
 import HomeScreen from './HomeScreen';
-import ModalScreen from './ModalScreen';
 import NotFoundScreen from './NotFoundScreen';
+import OauthLogin from './OauthLoginScreen';
 
-export { HomeScreen, ModalScreen, NotFoundScreen };
+export { HomeScreen, NotFoundScreen, OauthLogin };

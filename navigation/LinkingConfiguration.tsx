@@ -14,16 +14,8 @@ const linking: LinkingOptions<RootStackParamList> = {
     prefixes: [prefix],
     config: {
         screens: {
-            Root: {
-                screens: {
-                    Home: {
-                        screens: {
-                            HomeScreen: 'home',
-                        },
-                    },
-                },
-            },
-            Modal: 'modal',
+            Home: 'home',
+            OauthLogin: 'OauthLogin',
             NotFound: '*',
         },
     },

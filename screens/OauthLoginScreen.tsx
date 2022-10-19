@@ -10,7 +10,7 @@ import { RootStackScreenProps } from 'navigation/types';
 import React from 'react';
 import { Image, StyleSheet } from 'react-native';
 import { useAppDispatch } from 'redux_toolkit/hooks';
-import { setUserCode, setUserLogged } from 'redux_toolkit/UserSlice';
+import { setUserLogged } from 'redux_toolkit/UserSlice';
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -20,7 +20,8 @@ export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLo
     dispatch(setUserLogged(true));
 
     const discovery = { authorizationEndpoint: 'https://api.intra.42.fr/oauth/authorize' };
-    const redirectUrl = Linking.createURL('home');
+    const redirectUrl = Linking.createURL('/');
+    console.log('redirectUrl: ', redirectUrl);
     const [request, response, promptAsync] = useAuthRequest(
         {
             clientId: Env.API_UID,
@@ -31,11 +32,37 @@ export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLo
         discovery
     );
 
+    async function getUserAccessToken(args: { code: string }) {
+        const { code } = args;
+        const HEADERS = {
+            'Content-Type': 'application/json',
+        };
+        const url = encodeURI('https://api.intra.42.fr/oauth/token');
+        console.log('code = ', code);
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: HEADERS,
+                body: JSON.stringify({
+                    grant_type: 'authorization_code',
+                    client_id: Env.API_UID,
+                    client_secret: Env.API_SECRET,
+                    code: code,
+                    redirect_uri: redirectUrl,
+                }),
+            });
+            const json_response = await response.json();
+            console.log(json_response);
+            navigation.navigate('Home');
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
     React.useEffect(() => {
         if (response?.type === 'success') {
             const { code } = response.params;
-            dispatch(setUserCode(code));
-            navigation.navigate('Home');
+            getUserAccessToken({ code: code });
         }
     }, [response]);
 

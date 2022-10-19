@@ -3,6 +3,7 @@ import React from 'react';
 import { useAppSelector } from 'redux_toolkit/hooks';
 import { HomeScreen, OauthLogin } from 'screens';
 import NotFoundScreen from 'screens/NotFoundScreen';
+import UserInfosScreen from 'screens/UserInfosScreen';
 import { RootStackParamList } from './types';
 
 /**
@@ -23,9 +24,8 @@ export default function RootNavigator() {
         >
             <Stack.Screen name="Home" component={HomeScreen} />
             <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
-            <Stack.Group screenOptions={{ presentation: 'containedModal' }}>
-                <Stack.Screen name="OauthLogin" component={OauthLogin} />
-            </Stack.Group>
+            <Stack.Screen name="OauthLogin" component={OauthLogin} />
+            <Stack.Screen name="UserInfos" component={UserInfosScreen} />
         </Stack.Navigator>
     );
 }

@@ -1,33 +1,16 @@
 import { Text, View } from 'components/Themed';
-import Env from 'config/Env';
-import { useAuthRequest } from 'expo-auth-session';
-import * as Linking from 'expo-linking';
 import * as WebBrowser from 'expo-web-browser';
 import { RootStackScreenProps } from 'navigation/types';
 import React from 'react';
 import { StyleSheet, TouchableOpacity } from 'react-native';
+import { useAppSelector } from 'redux_toolkit/hooks';
 
 WebBrowser.maybeCompleteAuthSession();
 
 export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
-    const discovery = { authorizationEndpoint: 'https://api.intra.42.fr/oauth/authorize' };
-    const redirectUrl = Linking.createURL('home');
-    const [request, response, promptAsync] = useAuthRequest(
-        {
-            clientId: Env.API_UID,
-            scopes: ['public'],
-            redirectUri: redirectUrl,
-            clientSecret: Env.API_SECRET,
-        },
-        discovery
-    );
-
-    React.useEffect(() => {
-        if (response?.type === 'success') {
-            const { code } = response.params;
-            console.log('code = ', code);
-        }
-    }, [response]);
+    const user = useAppSelector((state) => state.user);
+    console.log('Home');
+    console.log('user: ', user);
 
     return (
         <View
@@ -47,11 +30,8 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
                     borderRadius: 50,
                     justifyContent: 'center',
                 }}
-                onPress={() => {
-                    promptAsync();
-                }}
             >
-                <Text>Login with 42</Text>
+                <Text>Search 42 user</Text>
             </TouchableOpacity>
         </View>
     );

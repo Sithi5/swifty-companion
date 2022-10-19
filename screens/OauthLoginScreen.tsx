@@ -6,10 +6,16 @@ import * as WebBrowser from 'expo-web-browser';
 import { RootStackScreenProps } from 'navigation/types';
 import React from 'react';
 import { StyleSheet, TouchableOpacity } from 'react-native';
+import { useAppDispatch } from 'redux_toolkit/hooks';
+import { setUserCode, setUserLogged } from 'redux_toolkit/UserSlice';
 
 WebBrowser.maybeCompleteAuthSession();
 
 export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLogin'>) {
+    const dispatch = useAppDispatch();
+
+    dispatch(setUserLogged(true));
+
     const discovery = { authorizationEndpoint: 'https://api.intra.42.fr/oauth/authorize' };
     const redirectUrl = Linking.createURL('home');
     const [request, response, promptAsync] = useAuthRequest(
@@ -25,7 +31,8 @@ export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLo
     React.useEffect(() => {
         if (response?.type === 'success') {
             const { code } = response.params;
-            console.log('code = ', code);
+            dispatch(setUserCode(code));
+            navigation.navigate('Home');
         }
     }, [response]);
 

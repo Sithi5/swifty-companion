@@ -6,12 +6,15 @@ import { globalStyles } from 'globals/GlobalStyles';
 import { RootStackScreenProps } from 'navigation/types';
 import React from 'react';
 import { StyleSheet } from 'react-native';
+import { useAppSelector } from 'redux_toolkit/hooks';
 
 WebBrowser.maybeCompleteAuthSession();
 
 export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
     const [text, onChangeText] = React.useState('');
+    const user = useAppSelector((state) => state.user);
 
+    console.log('USER = ', user);
     return (
         <View style={styles.mainContainer}>
             <TextInput style={styles.input} onChangeText={onChangeText} value={text} />

@@ -18,7 +18,7 @@ export default function UserInfosScreen({ route, navigation }: RootStackScreenPr
     async function getUserInfos() {
         const HEADERS = {
             'Content-Type': 'application/json',
-            Authorization: 'Bearer ' + user.userCode,
+            Authorization: 'Bearer ' + user.userTokenData.accessToken,
         };
         const url = encodeURI(API_USER_BASE_URL);
         try {
@@ -39,7 +39,7 @@ export default function UserInfosScreen({ route, navigation }: RootStackScreenPr
 
     return (
         <View style={styles.mainContainer}>
-            <Text>User code? : {user.userCode}</Text>
+            <Text>User code? : {user.userToken}</Text>
         </View>
     );
 }

@@ -1,19 +1,20 @@
-import { API_KEY } from '@env';
 import PrimaryButton from 'components/PrimaryButton';
-import {
-    globalStyles,
-    defaultMargin,
-    defaultPadding,
-    defaultBorderRadius,
-} from 'globals/GlobalStyles';
-import { View, Text } from 'components/Themed';
-import { translate } from 'languages';
-import { RootTabScreenProps } from 'navigation/types';
-import React from 'react';
-import { Image, StyleSheet } from 'react-native';
+import { Text, View } from 'components/Themed';
 import { LinearGradient } from 'expo-linear-gradient';
+import * as WebBrowser from 'expo-web-browser';
+import { globalStyles } from 'globals/GlobalStyles';
+import { RootStackScreenProps } from 'navigation/types';
+import React from 'react';
+import { StyleSheet } from 'react-native';
+import { useAppSelector } from 'redux_toolkit/hooks';
 
-export default function Home({ navigation }: RootTabScreenProps<'Home'>) {
+WebBrowser.maybeCompleteAuthSession();
+
+export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
+    const user = useAppSelector((state) => state.user);
+    console.log('Home');
+    console.log('user: ', user);
+
     return (
         <View style={styles.mainContainer}>
             <LinearGradient
@@ -22,15 +23,10 @@ export default function Home({ navigation }: RootTabScreenProps<'Home'>) {
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 1 }}
             >
-                <Image
-                    style={{ resizeMode: 'cover', width: '75%', height: '30%' }}
-                    source={require('/home/mathieu/42/swifty-companion/assets/images/logo.png')}
-                ></Image>
-                <Text style={styles.title}>42</Text>
                 <Text style={styles.title}>Swifty-companion</Text>
                 <Text></Text>
                 <PrimaryButton
-                    text="Log in with 42"
+                    text="Search 42 user"
                     onPressFunction={() => {
                         return;
                     }}

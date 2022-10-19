@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, TouchableOpacity, Text } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 type Props = {
     text: string;
@@ -9,7 +9,12 @@ type Props = {
 export default function PrimaryButton(props: Props) {
     const { text, onPressFunction } = props;
     return (
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+            style={styles.button}
+            onPress={() => {
+                onPressFunction();
+            }}
+        >
             <Text style={styles.buttonText}>{text}</Text>
         </TouchableOpacity>
     );

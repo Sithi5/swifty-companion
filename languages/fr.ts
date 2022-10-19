@@ -7,4 +7,5 @@ export default {
     },
     screen_doesnt_exist: "404: Cette page n'existe pas.",
     hello_world: 'Hello World !',
+    go_home: "Retourner à l'accueil.",
 };

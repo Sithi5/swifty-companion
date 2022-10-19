@@ -8,7 +8,7 @@ export default function NotFoundScreen({ navigation }: RootStackScreenProps<'Not
     return (
         <View style={styles.container}>
             <Text style={styles.title}>{translate('screen_doesnt_exist')}</Text>
-            <TouchableOpacity onPress={() => navigation.replace('Root')} style={styles.link}>
+            <TouchableOpacity onPress={() => navigation.replace('Home')} style={styles.link}>
                 <Text style={styles.linkText}>{translate('go_home')}</Text>
             </TouchableOpacity>
         </View>

@@ -21,6 +21,7 @@ export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLo
 
     const discovery = { authorizationEndpoint: 'https://api.intra.42.fr/oauth/authorize' };
     const redirectUrl = Linking.createURL('home');
+    console.log(redirectUrl);
     const [request, response, promptAsync] = useAuthRequest(
         {
             clientId: Env.API_UID,
@@ -48,10 +49,9 @@ export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLo
                 end={{ x: 1, y: 1 }}
             >
                 <Image
-                    style={{ resizeMode: 'cover', width: 350, height: 250 }}
+                    style={{ resizeMode: 'cover', width: 350, height: 290 }}
                     source={require('../images/logo.png')}
                 ></Image>
-                <Text style={styles.title}>Swifty-companion</Text>
                 <Text></Text>
                 <PrimaryButton text="Log in with 42" onPressFunction={promptAsync}></PrimaryButton>
             </LinearGradient>

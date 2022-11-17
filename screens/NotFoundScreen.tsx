@@ -3,10 +3,12 @@ import { translate } from 'languages';
 import { RootStackScreenProps } from 'navigation/types';
 import React from 'react';
 import { StyleSheet, TouchableOpacity } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 
 export default function NotFoundScreen({ navigation }: RootStackScreenProps<'NotFound'>) {
     return (
         <View style={styles.container}>
+            <StatusBar backgroundColor="grey" />
             <Text style={styles.title}>{translate('screen_doesnt_exist')}</Text>
             <TouchableOpacity onPress={() => navigation.replace('Home')} style={styles.link}>
                 <Text style={styles.linkText}>{translate('go_home')}</Text>

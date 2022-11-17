@@ -11,16 +11,16 @@ import React from 'react';
 import { Image, StyleSheet } from 'react-native';
 import { useAppDispatch } from 'redux_toolkit/hooks';
 import { setUserCode, setUserLogged } from 'redux_toolkit/UserSlice';
+import { StatusBar } from 'expo-status-bar';
 
 WebBrowser.maybeCompleteAuthSession();
 
 export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLogin'>) {
     const dispatch = useAppDispatch();
 
-    dispatch(setUserLogged(true));
-
     const discovery = { authorizationEndpoint: 'https://api.intra.42.fr/oauth/authorize' };
     const redirectUrl = Linking.createURL('home');
+    console.log(redirectUrl);
     const [request, response, promptAsync] = useAuthRequest(
         {
             clientId: Env.API_UID,
@@ -34,6 +34,7 @@ export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLo
     React.useEffect(() => {
         if (response?.type === 'success') {
             const { code } = response.params;
+            dispatch(setUserLogged(true));
             dispatch(setUserCode(code));
             navigation.navigate('Home');
         }
@@ -41,6 +42,8 @@ export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLo
 
     return (
         <View style={styles.mainContainer}>
+            <StatusBar backgroundColor="white" />
+
             <LinearGradient
                 colors={['black', 'grey']}
                 style={styles.mainContainer}
@@ -48,10 +51,9 @@ export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLo
                 end={{ x: 1, y: 1 }}
             >
                 <Image
-                    style={{ resizeMode: 'cover', width: 350, height: 250 }}
+                    style={{ resizeMode: 'cover', width: 350, height: 290 }}
                     source={require('../images/logo.png')}
                 ></Image>
-                <Text style={styles.title}>Swifty-companion</Text>
                 <Text></Text>
                 <PrimaryButton text="Log in with 42" onPressFunction={promptAsync}></PrimaryButton>
             </LinearGradient>

@@ -1,4 +1,4 @@
-import { GetUser } from 'api/42ApiCall';
+import { getMe, getUserByLogin } from 'api/42ApiCall';
 import PrimaryButton from 'components/PrimaryButton';
 import { Text, View } from 'components/Themed';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -23,8 +23,11 @@ const COA_BANNER_SIZE = 150;
 
 export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
     const user = useAppSelector((state) => state.user);
-    console.log('Home');
     console.log('user: ', user);
+    console.log('try api call');
+    // getUserByLogin({ login: 'mabouce', api_user_token: user.userCode });
+    getMe({ api_user_token: user.userCode });
+    console.log('try api call end');
 
     const level = '19.48';
     const levelbar = '0.' + level.slice(-2);

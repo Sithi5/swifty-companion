@@ -1,3 +1,4 @@
+import { getMe } from 'api/42ApiCall';
 import PrimaryButton from 'components/PrimaryButton';
 import { Text, View } from 'components/Themed';
 import Env from 'config/Env';
@@ -11,7 +12,7 @@ import { RootStackScreenProps } from 'navigation/types';
 import React from 'react';
 import { Image, StyleSheet } from 'react-native';
 import { useAppDispatch } from 'redux_toolkit/hooks';
-import { setTokenData, setUserLogged } from 'redux_toolkit/UserSlice';
+import { setTokenData, setUserInfos, setUserLogged } from 'redux_toolkit/UserSlice';
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -49,7 +50,7 @@ export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLo
                     state: state,
                 }),
             });
-            const json_response = await response.json();
+            let json_response = await response.json();
             dispatch(setUserLogged(true));
             dispatch(
                 setTokenData({
@@ -59,6 +60,19 @@ export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLo
                     refreshToken: json_response.refresh_token,
                 })
             );
+            json_response = getMe({ api_user_token: json_response.access_token });
+            const userCoalition = 'order';
+            const userLevel = '19.48';
+            const userLogin = 'maginist';
+
+            dispatch(
+                setUserInfos({
+                    userCoalition: userCoalition,
+                    userLevel: userLevel,
+                    userLogin: userLogin,
+                })
+            );
+
             navigation.navigate('Home');
         } catch (error) {
             console.error(error);

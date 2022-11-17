@@ -7,13 +7,7 @@ import * as WebBrowser from 'expo-web-browser';
 import { globalStyles } from 'globals/GlobalStyles';
 import { RootStackScreenProps } from 'navigation/types';
 import React from 'react';
-import {
-    ImageBackground,
-    KeyboardAvoidingView,
-    Platform,
-    StyleSheet,
-    TextInput,
-} from 'react-native';
+import { Image, ImageBackground, KeyboardAvoidingView, Platform, StyleSheet } from 'react-native';
 import * as Progress from 'react-native-progress';
 import { useAppSelector } from 'redux_toolkit/hooks';
 
@@ -21,21 +15,21 @@ WebBrowser.maybeCompleteAuthSession();
 
 const COA_BANNER_SIZE = 150;
 
-export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
-    const [text, onChangeText] = React.useState('');
-    const user = useAppSelector((state) => state.user);
-    console.log('user: ', user);
-    console.log('try api call');
-    // getUserByLogin({ login: 'mabouce', api_user_token: user.userCode });
-    getMe({ api_user_token: user.userCode });
-    console.log('try api call end');
+const coalitionImages = {
+    alliance: require('../images/alliance.jpg'),
+    order: require('../images/order.jpg'),
+};
 
-    const level = '19.48';
-    const levelbar = '0.' + level.slice(-2);
-    const student = 'maginist';
+export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
+    console.log('HOME PAGE');
+    const user = useAppSelector((state) => state.user);
     const [text, onChangeText] = React.useState('');
-    const coa = 'alliance';
+
+    const login = user.userInfos.userLogin;
+    const level = user.userInfos.userLevel;
+    const levelbar = '0.' + level.slice(-2);
     const coaColor = '#05DFF7';
+
     // const coaColor = '#E300EB'
     //     ? coa === 'assembly'
     //     : '05DFF7'
@@ -44,7 +38,6 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
     //     ? coa === 'alliance'
     //     : '#F50502';
 
-    console.log('USER = ', user);
     return (
         <KeyboardAvoidingView
             enabled={true}
@@ -53,10 +46,14 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
         >
             <StatusBar backgroundColor="white" />
             <ImageBackground
-                source={require('../images/' + coa + '.jpg')}
+                source={
+                    user.userInfos.userCoalition.toLowerCase() === 'alliance'
+                        ? coalitionImages.alliance
+                        : coalitionImages.order
+                }
                 style={styles.coaContainer}
             >
-                <Text style={styles.text}>User : {student}</Text>
+                <Text style={styles.text}>User : {login}</Text>
                 <Text style={styles.text}>Level: {level}</Text>
                 <View style={styles.barContainer}>
                     <Progress.Bar progress={parseFloat(levelbar)} />
@@ -82,7 +79,6 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
                 <PrimaryButton
                     text="Search 42 user"
                     onPressFunction={() => {
-                        GetUser(text);
                         return;
                     }}
                 ></PrimaryButton>

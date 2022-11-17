@@ -1,24 +1,36 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export type UserTokenData = {
-    accessToken: string | undefined;
+    accessToken: string;
     accessTokenCreatedAt: string | undefined;
     accessTokenExpiresIn: string | undefined;
     refreshToken: string | undefined;
 };
 
+export type UserInfos = {
+    userLogin: string;
+    userLevel: string;
+    userCoalition: string;
+};
+
 export type UserState = {
     logged: boolean;
     userTokenData: UserTokenData;
+    userInfos: UserInfos;
 };
 
 const initialState: UserState = {
     logged: false,
     userTokenData: {
-        accessToken: undefined,
+        accessToken: '',
         accessTokenCreatedAt: undefined,
         accessTokenExpiresIn: undefined,
         refreshToken: undefined,
+    },
+    userInfos: {
+        userLogin: '',
+        userLevel: '',
+        userCoalition: '',
     },
 };
 
@@ -28,6 +40,18 @@ export const userSlice = createSlice({
     reducers: {
         setUserLogged(state, action: PayloadAction<boolean>) {
             state.logged = action.payload;
+        },
+        setUserInfos(state, action: PayloadAction<UserInfos>) {
+            state.userInfos = action.payload;
+        },
+        setUserLogin(state, action: PayloadAction<string>) {
+            state.userInfos.userLogin = action.payload;
+        },
+        setUserLevel(state, action: PayloadAction<string>) {
+            state.userInfos.userLevel = action.payload;
+        },
+        setUserCoalition(state, action: PayloadAction<string>) {
+            state.userInfos.userCoalition = action.payload;
         },
         setUserAccessToken(state, action: PayloadAction<string>) {
             state.userTokenData.accessToken = action.payload;
@@ -55,6 +79,10 @@ export const {
     setUserAccessTokenCreatedAt,
     setUserAccessTokenExpiresIn,
     setTokenData,
+    setUserInfos,
+    setUserLogin,
+    setUserLevel,
+    setUserCoalition,
 } = userSlice.actions;
 
 export default userSlice.reducer;

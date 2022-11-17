@@ -1,6 +1,6 @@
 import { getMe, getUserByLogin } from 'api/42ApiCall';
 import PrimaryButton from 'components/PrimaryButton';
-import { Text, View } from 'components/Themed';
+import { Text, TextInput, View } from 'components/Themed';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar';
 import * as WebBrowser from 'expo-web-browser';
@@ -22,6 +22,7 @@ WebBrowser.maybeCompleteAuthSession();
 const COA_BANNER_SIZE = 150;
 
 export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
+    const [text, onChangeText] = React.useState('');
     const user = useAppSelector((state) => state.user);
     console.log('user: ', user);
     console.log('try api call');
@@ -43,6 +44,7 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
     //     ? coa === 'alliance'
     //     : '#F50502';
 
+    console.log('USER = ', user);
     return (
         <KeyboardAvoidingView
             enabled={true}

@@ -3,6 +3,7 @@ import React from 'react';
 import { useAppSelector } from 'redux_toolkit/hooks';
 import { HomeScreen, OauthLogin } from 'screens';
 import NotFoundScreen from 'screens/NotFoundScreen';
+import UserInfosScreen from 'screens/UserInfosScreen';
 import { RootStackParamList } from './types';
 
 /**
@@ -20,7 +21,7 @@ export default function RootNavigator() {
                 screenOptions={{
                     headerShown: false,
                 }}
-                initialRouteName="Home"
+                initialRouteName={'Home'}
             >
                 <Stack.Screen name="Home" component={HomeScreen} />
                 <Stack.Screen
@@ -28,9 +29,7 @@ export default function RootNavigator() {
                     component={NotFoundScreen}
                     options={{ title: 'Oops!' }}
                 />
-                <Stack.Group screenOptions={{ presentation: 'containedModal' }}>
-                    <Stack.Screen name="OauthLogin" component={OauthLogin} />
-                </Stack.Group>
+                <Stack.Screen name="UserInfos" component={UserInfosScreen} />
             </Stack.Navigator>
         );
     } else {
@@ -39,17 +38,14 @@ export default function RootNavigator() {
                 screenOptions={{
                     headerShown: false,
                 }}
-                initialRouteName="OauthLogin"
+                initialRouteName={'OauthLogin'}
             >
-                <Stack.Screen name="Home" component={HomeScreen} />
                 <Stack.Screen
                     name="NotFound"
                     component={NotFoundScreen}
                     options={{ title: 'Oops!' }}
                 />
-                <Stack.Group screenOptions={{ presentation: 'containedModal' }}>
-                    <Stack.Screen name="OauthLogin" component={OauthLogin} />
-                </Stack.Group>
+                <Stack.Screen name="OauthLogin" component={OauthLogin} />
             </Stack.Navigator>
         );
     }

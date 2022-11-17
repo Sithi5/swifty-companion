@@ -16,6 +16,7 @@ const linking: LinkingOptions<RootStackParamList> = {
         screens: {
             Home: 'home',
             OauthLogin: 'OauthLogin',
+            UserInfos: 'UserInfos',
             NotFound: '*',
         },
     },

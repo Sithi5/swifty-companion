@@ -4,9 +4,17 @@ import { LinearGradient } from 'expo-linear-gradient';
 import * as WebBrowser from 'expo-web-browser';
 import { globalStyles } from 'globals/GlobalStyles';
 import { RootStackScreenProps } from 'navigation/types';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import * as Progress from 'react-native-progress';
-import { StyleSheet, TextInput, Image, ImageBackground } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import {
+    StyleSheet,
+    TextInput,
+    Image,
+    ImageBackground,
+    KeyboardAvoidingView,
+    Platform,
+} from 'react-native';
 import { useAppSelector } from 'redux_toolkit/hooks';
 
 WebBrowser.maybeCompleteAuthSession();
@@ -20,63 +28,77 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
     const levelbar = '0.' + level.slice(-2);
     const student = 'maginist';
     const [text, onChangeText] = React.useState('');
-    const coa = ['assembly', 'order', 'federation', 'alliance'];
-    const coaColor = ['#E300EB', '#F50502', '#05DFF7', '#00EB14'];
+    const coa = 'alliance';
+    const coaColor = '#05DFF7';
+    // const coaColor = '#E300EB'
+    //     ? coa === 'assembly'
+    //     : '05DFF7'
+    //     ? coa === 'federation'
+    //     : '#00EB14'
+    //     ? coa === 'alliance'
+    //     : '#F50502';
 
     return (
-        <View style={styles.mainContainer}>
-            <LinearGradient
-                colors={['black', 'grey']}
-                style={styles.mainContainer}
-                start={{ x: 0, y: 0 }}
-                end={{ x: 1, y: 1 }}
-            >
-                <View style={styles.coaContainer}>
-                    <ImageBackground
-                        style={styles.imageBackGround}
-                        source={require('../images/assembly.jpg')}
-                    ></ImageBackground>
-                    <Text style={styles.text}>User : {student}</Text>
-                    <Text style={styles.text}>Level: {level}</Text>
-                    <Progress.Bar progress={parseFloat(levelbar)} style={styles.bar} />
-                </View>
-                <Text></Text>
-                <Image
-                    style={{ resizeMode: 'cover', width: 350, height: 290 }}
-                    source={require('../images/logo.png')}
-                ></Image>
-                <Text></Text>
-                <TextInput
-                    style={styles.input}
-                    placeholder="Type user name"
-                    onChangeText={onChangeText}
-                    value={text}
-                />
-                <Text></Text>
-                <PrimaryButton
-                    text="Search 42 user"
-                    onPressFunction={() => {
-                        return;
-                    }}
-                ></PrimaryButton>
-            </LinearGradient>
+        <View>
+            <StatusBar backgroundColor="white" />
+            <View style={[{ shadowColor: coaColor, borderColor: coaColor }, styles.coaContainer]}>
+                <ImageBackground
+                    style={styles.imageBackGround}
+                    resizeMode="contain"
+                    source={require('../images/' + coa + '.jpg')}
+                ></ImageBackground>
+                <Text style={styles.text}>User : {student}</Text>
+                <Text style={styles.text}>Level: {level}</Text>
+                <Progress.Bar progress={parseFloat(levelbar)} style={styles.bar} />
+            </View>
+            <View style={{ borderRadius: 15 }}>
+                <LinearGradient
+                    colors={['black', 'grey']}
+                    style={styles.mainContainer}
+                    start={{ x: 0, y: 0 }}
+                    end={{ x: 1, y: 1 }}
+                >
+                    <Image
+                        style={{
+                            width: 350,
+                            height: 290,
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                        }}
+                        source={require('../images/logo.png')}
+                    ></Image>
+
+                    <TextInput
+                        style={styles.input}
+                        placeholder="Type user name"
+                        onChangeText={onChangeText}
+                        value={text}
+                    />
+                    <PrimaryButton
+                        text="Search 42 user"
+                        onPressFunction={() => {
+                            return;
+                        }}
+                    ></PrimaryButton>
+                </LinearGradient>
+            </View>
         </View>
     );
 }
 
 const styles = StyleSheet.create({
     mainContainer: {
+        zIndex: 2,
         height: '100%',
-        width: '100%',
+        position: 'relative',
         alignItems: 'center',
         justifyContent: 'center',
     },
     coaContainer: {
-        position: 'relative',
-        marginTop: -150,
-        width: 400,
-        height: 200,
-        shadowColor: '#E300EB',
+        zIndex: 1,
+        position: 'absolute',
+        width: '100%',
+        height: 193,
         shadowOffset: {
             width: 0,
             height: 15,
@@ -84,13 +106,11 @@ const styles = StyleSheet.create({
         shadowOpacity: 11,
         shadowRadius: 14,
         elevation: 14,
-        borderColor: '#E300EB',
     },
     imageBackGround: {
-        height: 200,
-        width: 410,
-        flexDirection: 'row',
-        justifyContent: 'center',
+        width: '100%',
+        height: undefined,
+        aspectRatio: 2,
     },
     title: {
         color: 'white',
@@ -110,6 +130,7 @@ const styles = StyleSheet.create({
         left: 200,
     },
     text: {
+        zIndex: 1,
         top: -100,
         left: 200,
         color: 'white',

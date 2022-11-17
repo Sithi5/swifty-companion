@@ -1,24 +1,25 @@
+import { GetUser } from 'api/42ApiCall';
 import PrimaryButton from 'components/PrimaryButton';
 import { Text, View } from 'components/Themed';
 import { LinearGradient } from 'expo-linear-gradient';
+import { StatusBar } from 'expo-status-bar';
 import * as WebBrowser from 'expo-web-browser';
 import { globalStyles } from 'globals/GlobalStyles';
 import { RootStackScreenProps } from 'navigation/types';
 import React from 'react';
-import * as Progress from 'react-native-progress';
-import { StatusBar } from 'expo-status-bar';
-import { GetUser } from 'api/42ApiCall';
 import {
-    StyleSheet,
-    TextInput,
-    Image,
     ImageBackground,
     KeyboardAvoidingView,
     Platform,
+    StyleSheet,
+    TextInput,
 } from 'react-native';
+import * as Progress from 'react-native-progress';
 import { useAppSelector } from 'redux_toolkit/hooks';
 
 WebBrowser.maybeCompleteAuthSession();
+
+const COA_BANNER_SIZE = 150;
 
 export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
     const user = useAppSelector((state) => state.user);
@@ -40,67 +41,62 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
     //     : '#F50502';
 
     return (
-        <View>
+        <KeyboardAvoidingView
+            enabled={true}
+            style={styles.mainContainer}
+            behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+        >
             <StatusBar backgroundColor="white" />
-            <View style={[{ shadowColor: coaColor, borderColor: coaColor }, styles.coaContainer]}>
-                <ImageBackground
-                    style={styles.imageBackGround}
-                    resizeMode="contain"
-                    source={require('../images/' + coa + '.jpg')}
-                ></ImageBackground>
+            <ImageBackground
+                source={require('../images/' + coa + '.jpg')}
+                style={styles.coaContainer}
+            >
                 <Text style={styles.text}>User : {student}</Text>
                 <Text style={styles.text}>Level: {level}</Text>
-                <Progress.Bar progress={parseFloat(levelbar)} style={styles.bar} />
-            </View>
-            <View style={{ borderRadius: 15 }}>
-                <LinearGradient
-                    colors={['black', 'grey']}
-                    style={styles.mainContainer}
-                    start={{ x: 0, y: 0 }}
-                    end={{ x: 1, y: 1 }}
-                >
-                    <Image
-                        style={{
-                            width: 350,
-                            height: 290,
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                        }}
-                        source={require('../images/logo.png')}
-                    ></Image>
+                <View style={styles.barContainer}>
+                    <Progress.Bar progress={parseFloat(levelbar)} />
+                </View>
+            </ImageBackground>
+            <LinearGradient
+                style={styles.inputContainer}
+                colors={['black', 'grey']}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 1 }}
+            >
+                <ImageBackground
+                    style={styles.inputContainerLogo}
+                    source={require('../images/logo.png')}
+                ></ImageBackground>
 
-                    <TextInput
-                        style={styles.input}
-                        placeholder="Type user name"
-                        onChangeText={onChangeText}
-                        value={text}
-                    />
-                    <PrimaryButton
-                        text="Search 42 user"
-                        onPressFunction={() => {
-                            GetUser(text);
-                            return;
-                        }}
-                    ></PrimaryButton>
-                </LinearGradient>
-            </View>
-        </View>
+                <TextInput
+                    style={styles.input}
+                    placeholder="Type user name"
+                    onChangeText={onChangeText}
+                    value={text}
+                />
+                <PrimaryButton
+                    text="Search 42 user"
+                    onPressFunction={() => {
+                        GetUser(text);
+                        return;
+                    }}
+                ></PrimaryButton>
+            </LinearGradient>
+        </KeyboardAvoidingView>
     );
 }
 
 const styles = StyleSheet.create({
-    mainContainer: {
-        zIndex: 2,
-        height: '100%',
-        position: 'relative',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
+    mainContainer: { flex: 1 },
     coaContainer: {
-        zIndex: 1,
+        flex: 1,
         position: 'absolute',
         width: '100%',
-        height: 193,
+        height: COA_BANNER_SIZE,
+        zIndex: 2,
+        justifyContent: 'center',
+        resizeMode: 'cover',
+        alignItems: 'flex-end',
         shadowOffset: {
             width: 0,
             height: 15,
@@ -109,32 +105,36 @@ const styles = StyleSheet.create({
         shadowRadius: 14,
         elevation: 14,
     },
-    imageBackGround: {
-        width: '100%',
-        height: undefined,
-        aspectRatio: 2,
+    inputContainer: {
+        paddingTop: COA_BANNER_SIZE,
+        flex: 1,
+        zIndex: 1,
+        alignItems: 'center',
+    },
+    inputContainerLogo: {
+        margin: 10,
+        width: 350,
+        height: 290,
     },
     title: {
         color: 'white',
         fontSize: globalStyles.h1.fontSize,
     },
     input: {
-        alignItems: 'center',
-        justifyContent: 'center',
+        margin: 20,
+        width: '60%',
         borderColor: 'black',
         backgroundColor: 'lightgrey',
         color: 'black',
-        width: 170,
-        borderRadius: 3,
+        borderRadius: 10,
     },
-    bar: {
-        top: -100,
-        left: 200,
+    barContainer: {
+        paddingRight: 10,
+        paddingTop: 10,
+        backgroundColor: 'transparent',
     },
     text: {
-        zIndex: 1,
-        top: -100,
-        left: 200,
+        paddingRight: 10,
         color: 'white',
     },
 });

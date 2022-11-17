@@ -14,18 +14,43 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 export default function RootNavigator() {
     const user = useAppSelector((state) => state.user);
 
-    return (
-        <Stack.Navigator
-            screenOptions={{
-                headerShown: false,
-            }}
-            initialRouteName={user.logged === false ? 'OauthLogin' : 'Home'}
-        >
-            <Stack.Screen name="Home" component={HomeScreen} />
-            <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
-            <Stack.Group screenOptions={{ presentation: 'containedModal' }}>
-                <Stack.Screen name="OauthLogin" component={OauthLogin} />
-            </Stack.Group>
-        </Stack.Navigator>
-    );
+    if (user.logged === true) {
+        return (
+            <Stack.Navigator
+                screenOptions={{
+                    headerShown: false,
+                }}
+                initialRouteName="Home"
+            >
+                <Stack.Screen name="Home" component={HomeScreen} />
+                <Stack.Screen
+                    name="NotFound"
+                    component={NotFoundScreen}
+                    options={{ title: 'Oops!' }}
+                />
+                <Stack.Group screenOptions={{ presentation: 'containedModal' }}>
+                    <Stack.Screen name="OauthLogin" component={OauthLogin} />
+                </Stack.Group>
+            </Stack.Navigator>
+        );
+    } else {
+        return (
+            <Stack.Navigator
+                screenOptions={{
+                    headerShown: false,
+                }}
+                initialRouteName="OauthLogin"
+            >
+                <Stack.Screen name="Home" component={HomeScreen} />
+                <Stack.Screen
+                    name="NotFound"
+                    component={NotFoundScreen}
+                    options={{ title: 'Oops!' }}
+                />
+                <Stack.Group screenOptions={{ presentation: 'containedModal' }}>
+                    <Stack.Screen name="OauthLogin" component={OauthLogin} />
+                </Stack.Group>
+            </Stack.Navigator>
+        );
+    }
 }

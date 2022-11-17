@@ -4,9 +4,10 @@ import { LinearGradient } from 'expo-linear-gradient';
 import * as WebBrowser from 'expo-web-browser';
 import { globalStyles } from 'globals/GlobalStyles';
 import { RootStackScreenProps } from 'navigation/types';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import * as Progress from 'react-native-progress';
 import { StatusBar } from 'expo-status-bar';
+import { GetUser } from 'api/42ApiCall';
 import {
     StyleSheet,
     TextInput,
@@ -77,6 +78,7 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
                     <PrimaryButton
                         text="Search 42 user"
                         onPressFunction={() => {
+                            GetUser(text);
                             return;
                         }}
                     ></PrimaryButton>

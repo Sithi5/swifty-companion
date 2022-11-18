@@ -1,4 +1,4 @@
-import { getMe, getUserByLogin } from 'api/42ApiCall';
+import { getUserByLogin } from 'api/42ApiCall';
 import PrimaryButton from 'components/PrimaryButton';
 import { Text, TextInput, View } from 'components/Themed';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -7,7 +7,7 @@ import * as WebBrowser from 'expo-web-browser';
 import { globalStyles } from 'globals/GlobalStyles';
 import { RootStackScreenProps } from 'navigation/types';
 import React from 'react';
-import { Image, ImageBackground, KeyboardAvoidingView, Platform, StyleSheet } from 'react-native';
+import { ImageBackground, KeyboardAvoidingView, Platform, StyleSheet } from 'react-native';
 import * as Progress from 'react-native-progress';
 import { useAppSelector } from 'redux_toolkit/hooks';
 
@@ -18,6 +18,8 @@ const COA_BANNER_SIZE = 150;
 const coalitionImages = {
     alliance: require('../images/alliance.jpg'),
     order: require('../images/order.jpg'),
+    assembly: require('../images/assembly.jpg'),
+    federation: require('../images/federation.jpg'),
 };
 
 export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
@@ -27,16 +29,21 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
 
     const login = user.userInfos.userLogin;
     const level = user.userInfos.userLevel;
-    const levelbar = '0.' + level.slice(-2);
-    const coaColor = '#05DFF7';
+    const levelbar = '0.' + String(level).slice(-2);
 
-    // const coaColor = '#E300EB'
-    //     ? coa === 'assembly'
-    //     : '05DFF7'
-    //     ? coa === 'federation'
-    //     : '#00EB14'
-    //     ? coa === 'alliance'
-    //     : '#F50502';
+    async function getUser(userLogin: string) {
+        try {
+            const response_json = await getUserByLogin({
+                api_user_token: user.userTokenData.accessToken,
+                login: userLogin,
+            });
+            console.log('data ', response_json);
+
+            navigation.navigate('UserInfos');
+        } catch (error) {
+            console.error(error);
+        }
+    }
 
     return (
         <KeyboardAvoidingView
@@ -47,9 +54,13 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
             <StatusBar backgroundColor="white" />
             <ImageBackground
                 source={
-                    user.userInfos.userCoalition.toLowerCase() === 'alliance'
+                    user.userInfos.userCoalition === 'The Alliance'
                         ? coalitionImages.alliance
-                        : coalitionImages.order
+                        : user.userInfos.userCoalition === 'The Order'
+                        ? coalitionImages.order
+                        : user.userInfos.userCoalition === 'The Assembly'
+                        ? coalitionImages.assembly
+                        : coalitionImages.federation
                 }
                 style={styles.coaContainer}
             >
@@ -79,7 +90,7 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
                 <PrimaryButton
                     text="Search 42 user"
                     onPressFunction={() => {
-                        return;
+                        getUser(text);
                     }}
                 ></PrimaryButton>
             </LinearGradient>

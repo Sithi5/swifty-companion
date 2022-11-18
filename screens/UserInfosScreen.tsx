@@ -10,8 +10,7 @@ WebBrowser.maybeCompleteAuthSession();
 
 const API_USER_BASE_URL = 'https://api.intra.42.fr/v2/users/';
 
-export default function UserInfosScreen({ route, navigation }: RootStackScreenProps<'UserInfos'>) {
-    const { userName } = route.params;
+export default function UserInfosScreen({ navigation }: RootStackScreenProps<'UserInfos'>) {
     const user = useAppSelector((state) => state.user);
     const [UserInfo42, setUserInfo42] = useState();
 
@@ -39,7 +38,7 @@ export default function UserInfosScreen({ route, navigation }: RootStackScreenPr
 
     return (
         <View style={styles.mainContainer}>
-            <Text>User code? : {user.userToken}</Text>
+            <Text>User code? : {user.userTokenData.accessToken}</Text>
         </View>
     );
 }

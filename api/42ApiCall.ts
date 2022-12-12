@@ -24,7 +24,7 @@ export async function getUserByLogin(args: {
         });
         json_response = await response.json();
         console.log('\njson_response ', json_response);
-        return json_response[0];
+        return json_response;
     } catch (error) {
         console.error(error);
     }

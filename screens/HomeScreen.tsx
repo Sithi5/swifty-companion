@@ -29,7 +29,7 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
 
     const login = user.userInfos.userLogin;
     const level = user.userInfos.userLevel;
-    const levelbar = '0.' + String(level).slice(-2);
+    const levelbar = '0.' + level.toString().slice(-2);
 
     async function getUser(userLogin: string) {
         try {

@@ -7,16 +7,11 @@ import { StyleSheet, View } from 'react-native';
 export type StatusBarProps = { backgroundColor?: string } & ThemeProps;
 
 export function StatusBar(props: StatusBarProps) {
-    const { backgroundColor, lightColor, darkColor, ...otherProps } = props;
-    console.log('Constants.statusBarHeight = ', Constants.statusBarHeight);
+    const { backgroundColor = whiteColor, ...otherProps } = props;
 
     return (
         <View
-            style={{
-                backgroundColor: backgroundColor,
-                position: 'absolute',
-                height: Constants.statusBarHeight,
-            }}
+            style={[{ backgroundColor: backgroundColor }, styles.StatusBar]}
             {...otherProps}
         ></View>
     );

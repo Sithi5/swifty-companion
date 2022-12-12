@@ -24,7 +24,7 @@ export default function UserInfosScreen({ route }: RootStackScreenProps<'UserInf
 
     return (
         <View style={styles.mainContainer}>
-            <StatusBar backgroundColor="red" />
+            <StatusBar />
             <Image
                 source={{
                     uri: userInfos.image.link,

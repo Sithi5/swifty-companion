@@ -2,7 +2,6 @@ import { getUserByLogin } from 'api/42ApiCall';
 import PrimaryButton from 'components/PrimaryButton';
 import { Text, TextInput, View } from 'components/Themed';
 import { LinearGradient } from 'expo-linear-gradient';
-import { StatusBar } from 'expo-status-bar';
 import * as WebBrowser from 'expo-web-browser';
 import { globalStyles } from 'globals/GlobalStyles';
 import { RootStackScreenProps } from 'navigation/types';
@@ -52,7 +51,6 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
             style={styles.mainContainer}
             behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
         >
-            <StatusBar backgroundColor="white" />
             <ImageBackground
                 source={
                     user.userInfos.userCoalition === 'The Alliance'

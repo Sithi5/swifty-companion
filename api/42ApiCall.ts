@@ -1,5 +1,11 @@
-export async function getUserByLogin(args: { api_user_token: string; login: string }) {
+import { UserResponseType } from './42ApiTypes';
+
+export async function getUserByLogin(args: {
+    api_user_token: string;
+    login: string;
+}): Promise<undefined | UserResponseType> {
     const { api_user_token, login } = args;
+    console.log('login = ', login);
     const url = 'https://api.intra.42.fr/v2/users?filter[login]=' + login;
     const header = {
         'Content-Type': 'application/json',
@@ -12,7 +18,7 @@ export async function getUserByLogin(args: { api_user_token: string; login: stri
         });
         const json_response = await response.json();
         console.log('\njson_response ', json_response);
-        return json_response;
+        return json_response[0];
     } catch (error) {
         console.error(error);
     }

@@ -35,11 +35,12 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
         try {
             const response_json = await getUserByLogin({
                 api_user_token: user.userTokenData.accessToken,
-                login: userLogin,
+                login: userLogin.toLowerCase(),
             });
-            console.log('data ', response_json);
-
-            navigation.navigate('UserInfos');
+            console.log('response_json = ', response_json);
+            if (response_json != undefined) {
+                navigation.navigate('UserInfos', { userInfos: response_json });
+            }
         } catch (error) {
             console.error(error);
         }

@@ -1,3 +1,5 @@
+import { Route } from '@react-navigation/native';
+import { getUserByLogin } from 'api/42ApiCall';
 import { Text, View } from 'components/Themed';
 import * as WebBrowser from 'expo-web-browser';
 import { globalStyles } from 'globals/GlobalStyles';
@@ -10,35 +12,20 @@ WebBrowser.maybeCompleteAuthSession();
 
 const API_USER_BASE_URL = 'https://api.intra.42.fr/v2/users/';
 
-export default function UserInfosScreen({ navigation }: RootStackScreenProps<'UserInfos'>) {
+export default function UserInfosScreen({ route }: RootStackScreenProps<'UserInfos'>) {
+    console.log('USER INFOS SCREEN PAGE');
+    const { userInfos } = route.params;
+    console.log(userInfos);
+
     const user = useAppSelector((state) => state.user);
     const [UserInfo42, setUserInfo42] = useState();
-
-    async function getUserInfos() {
-        const HEADERS = {
-            'Content-Type': 'application/json',
-            Authorization: 'Bearer ' + user.userTokenData.accessToken,
-        };
-        const url = encodeURI(API_USER_BASE_URL);
-        try {
-            const response = await fetch(url, {
-                method: 'GET',
-                headers: HEADERS,
-            });
-            const json_response = await response.json();
-            console.log(json_response);
-        } catch (error) {
-            console.error(error);
-        }
-    }
-
-    useEffect(() => {
-        getUserInfos();
-    });
+    console.log('userInfos ', userInfos);
 
     return (
         <View style={styles.mainContainer}>
-            <Text>User code? : {user.userTokenData.accessToken}</Text>
+            <Text>User code? : {userInfos.email}</Text>
+            <Text>User code? : {userInfos.first_name}</Text>
+            <Text>User code? : {userInfos.last_name}</Text>
         </View>
     );
 }

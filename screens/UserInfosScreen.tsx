@@ -1,11 +1,12 @@
 import { Route } from '@react-navigation/native';
 import { getUserByLogin } from 'api/42ApiCall';
+import { StatusBar } from 'components/StatusBar';
 import { Text, View } from 'components/Themed';
 import * as WebBrowser from 'expo-web-browser';
 import { globalStyles } from 'globals/GlobalStyles';
 import { RootStackScreenProps } from 'navigation/types';
 import React, { useEffect, useState } from 'react';
-import { StyleSheet } from 'react-native';
+import { Image, StyleSheet } from 'react-native';
 import { useAppSelector } from 'redux_toolkit/hooks';
 
 WebBrowser.maybeCompleteAuthSession();
@@ -23,6 +24,13 @@ export default function UserInfosScreen({ route }: RootStackScreenProps<'UserInf
 
     return (
         <View style={styles.mainContainer}>
+            <StatusBar backgroundColor="red" />
+            <Image
+                source={{
+                    uri: userInfos.image.link,
+                }}
+                style={styles.userImage}
+            />
             <Text>User code? : {userInfos.email}</Text>
             <Text>User code? : {userInfos.first_name}</Text>
             <Text>User code? : {userInfos.last_name}</Text>
@@ -46,5 +54,10 @@ const styles = StyleSheet.create({
         margin: 12,
         borderWidth: 1,
         padding: 10,
+    },
+    userImage: {
+        width: 200,
+        height: 200,
+        borderRadius: 100,
     },
 });

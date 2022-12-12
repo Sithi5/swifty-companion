@@ -1,5 +1,17 @@
 import { Nullable } from 'globals/types';
 
+type Image = {
+    link: string;
+    versions: Versions;
+};
+
+type Versions = {
+    large: string;
+    medium: string;
+    micro: string;
+    small: string;
+};
+
 type UserResponseType = {
     active?: Nullable<boolean>;
     alumni?: Nullable<boolean>;
@@ -12,10 +24,7 @@ type UserResponseType = {
     email: Nullable<string>;
     first_name: Nullable<string>;
     id: 37642;
-    image: {
-        link: Nullable<string>;
-        versions: Nullable<Record<string, unknown>>;
-    };
+    image: Image;
     kind: Nullable<string>;
     last_name: Nullable<string>;
     location: Nullable<string>;

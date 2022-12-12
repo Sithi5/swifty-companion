@@ -17,13 +17,13 @@ type UserResponseType = {
     alumni?: Nullable<boolean>;
     alumnized_at: Nullable<string>;
     anonymize_date: Nullable<string>;
-    correction_point: 4;
+    correction_point: Nullable<number>;
     created_at: Nullable<string>;
     data_erasure_date: Nullable<string>;
     displayname: Nullable<string>;
     email: Nullable<string>;
     first_name: Nullable<string>;
-    id: 37642;
+    id: Nullable<number>;
     image: Image;
     kind: Nullable<string>;
     last_name: Nullable<string>;
@@ -37,7 +37,7 @@ type UserResponseType = {
     url: Nullable<string>;
     usual_first_name: null;
     usual_full_name: Nullable<string>;
-    wallet: 465;
+    wallet: Nullable<number>;
 };
 
 type UsersResponseType = [UserResponseType];

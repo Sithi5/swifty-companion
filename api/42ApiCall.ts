@@ -7,16 +7,22 @@ export async function getUserByLogin(args: {
     const { api_user_token, login } = args;
     console.log('login = ', login);
     const url = 'https://api.intra.42.fr/v2/users?filter[login]=' + login;
+    const urlId = 'https://api.intra.42.fr/v2/users/';
     const header = {
         'Content-Type': 'application/json',
         Authorization: 'Bearer ' + api_user_token,
     };
     try {
-        const response = await fetch(url, {
+        let response = await fetch(url, {
             method: 'GET',
             headers: header,
         });
-        const json_response = await response.json();
+        let json_response = await response.json();
+        response = await fetch(urlId + json_response[0]['id'], {
+            method: 'GET',
+            headers: header,
+        });
+        json_response = await response.json();
         console.log('\njson_response ', json_response);
         return json_response[0];
     } catch (error) {

@@ -1,5 +1,5 @@
 import { Route } from '@react-navigation/native';
-import { getUserByLogin } from 'api/42ApiCall';
+import { getUserByLogin, getCoa, getAllUserData } from 'api/42ApiCall';
 
 import { LinearGradient } from 'expo-linear-gradient';
 import * as Progress from 'react-native-progress';
@@ -8,8 +8,8 @@ import { Text, View } from 'components/Themed';
 import * as WebBrowser from 'expo-web-browser';
 import { globalStyles } from 'globals/GlobalStyles';
 import { RootStackScreenProps } from 'navigation/types';
-import React, { useEffect, useState } from 'react';
-import { StyleSheet, ImageBackground, KeyboardAvoidingView, Platform } from 'react-native';
+import React, { useEffect } from 'react';
+import { StyleSheet, ImageBackground, KeyboardAvoidingView, Platform, Image } from 'react-native';
 import { useAppSelector } from 'redux_toolkit/hooks';
 
 WebBrowser.maybeCompleteAuthSession();
@@ -31,13 +31,30 @@ export default function UserInfosScreen({ route }: RootStackScreenProps<'UserInf
     const login = userInfos.login;
     const level = '10.0';
     const levelbar = '0.' + level.toString().slice(-2);
-
     const user = useAppSelector((state) => state.user);
-    const [UserInfo42, setUserInfo42] = useState();
+    const [userCoalition, setUserCoalition] = React.useState('');
+
     console.log('userInfos ', userInfos);
 
-    return (
+    async function awaitCoa() {
+        try {
+            const response = await getCoa({
+                id: userInfos.id,
+                api_user_token: user.userTokenData.accessToken,
+            });
+            if (response != undefined) {
+                setUserCoalition(response[response.length - 1]['name']);
+            }
+        } catch (error) {
+            console.error(error);
+        }
+    }
 
+    React.useEffect(() => {
+        awaitCoa();
+    });
+
+    return (
         <KeyboardAvoidingView
             enabled={true}
             style={styles.mainContainer}
@@ -45,18 +62,24 @@ export default function UserInfosScreen({ route }: RootStackScreenProps<'UserInf
         >
             <ImageBackground
                 source={
-                    user.userInfos.userCoalition === 'The Alliance'
+                    userCoalition === 'The Alliance'
                         ? coalitionImages.alliance
-                        : user.userInfos.userCoalition === 'The Order'
+                        : userCoalition === 'The Order'
                         ? coalitionImages.order
-                        : user.userInfos.userCoalition === 'The Assembly'
+                        : userCoalition === 'The Assembly'
                         ? coalitionImages.assembly
-                        : user.userInfos.userCoalition === 'The Federation'
+                        : userCoalition === 'The Federation'
                         ? coalitionImages.federation
                         : coalitionImages.unknown
                 }
                 style={styles.coaContainer}
             >
+                <Image
+                    source={{
+                        uri: userInfos.image.link,
+                    }}
+                    style={styles.userImage}
+                />
                 <Text style={styles.text}>User : {login}</Text>
                 <Text style={styles.text}>Level: {level}</Text>
                 <View style={styles.barContainer}>
@@ -69,9 +92,9 @@ export default function UserInfosScreen({ route }: RootStackScreenProps<'UserInf
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 1 }}
             >
-                <Text>User code? : {userInfos.email}</Text>
-                <Text>User code? : {userInfos.first_name}</Text>
-                <Text>User code? : {userInfos.last_name}</Text>
+                <Text style={styles.text}>User code? : {userInfos.email}</Text>
+                <Text style={styles.text}>User code? : {userInfos.first_name}</Text>
+                <Text style={styles.text}>User code? : {userInfos.last_name}</Text>
             </LinearGradient>
         </KeyboardAvoidingView>
     );
@@ -85,6 +108,8 @@ const styles = StyleSheet.create({
         zIndex: 1,
         alignItems: 'center',
     },
+    // picture: {
+    // },
     coaContainer: {
         flex: 1,
         position: 'absolute',
@@ -120,5 +145,12 @@ const styles = StyleSheet.create({
     text: {
         paddingRight: 10,
         color: 'white',
+    },
+    userImage: {
+        zIndex: 2,
+
+        width: 80,
+        height: 80,
+        borderRadius: 100,
     },
 });

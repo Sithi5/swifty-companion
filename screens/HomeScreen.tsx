@@ -43,7 +43,7 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
             if (response_json != undefined) {
                 navigation.navigate('UserInfos', { userInfos: response_json });
             } else {
-                setError('User ' + truncate(userLogin, 25) + ' not found.');
+                setError("User '" + truncate(userLogin, 25) + "' not found.");
             }
         } catch (error) {
             console.error(error);

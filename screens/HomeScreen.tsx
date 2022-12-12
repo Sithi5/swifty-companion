@@ -3,18 +3,15 @@ import PrimaryButton from 'components/PrimaryButton';
 import { Text, TextInput, View } from 'components/Themed';
 import { LinearGradient } from 'expo-linear-gradient';
 import * as WebBrowser from 'expo-web-browser';
-import { globalStyles } from 'globals/GlobalStyles';
+import { globalStyles, coaBannerSize } from 'globals/GlobalStyles';
 import { RootStackScreenProps } from 'navigation/types';
 import React from 'react';
 import { ImageBackground, KeyboardAvoidingView, Platform, StyleSheet } from 'react-native';
 import * as Progress from 'react-native-progress';
 import { useAppSelector } from 'redux_toolkit/hooks';
-import { ListFormat } from 'typescript';
 import truncate from 'utils/truncate';
 
 WebBrowser.maybeCompleteAuthSession();
-
-const COA_BANNER_SIZE = 150;
 
 const coalitionImages = {
     alliance: require('../images/alliance.jpg'),
@@ -31,7 +28,8 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
 
     const login = user.userInfos.userLogin;
     const level = user.userInfos.userLevel;
-    const levelbar = '0.' + level.toString().slice(-2);
+    console.log("level.toString().split('.')[1]", level.toString().split('.')[1]);
+    const levelbar = '0.' + level.toString().split('.')[1];
 
     async function getUser(userLogin: string) {
         try {
@@ -43,7 +41,7 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
             if (response_json != undefined) {
                 navigation.navigate('UserInfos', { userInfos: response_json });
             } else {
-                setError("User '" + truncate(userLogin, 25) + "' not found.");
+                setError("error : User '" + truncate(userLogin, 25) + "' not found.");
             }
         } catch (error) {
             console.error(error);
@@ -85,7 +83,7 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
                     source={require('../images/logo.png')}
                 ></ImageBackground>
 
-                <Text style={styles.text_error}>error : {error}</Text>
+                <Text style={styles.text_error}>{error}</Text>
                 <TextInput
                     style={styles.input}
                     placeholder="Type user name"
@@ -109,7 +107,7 @@ const styles = StyleSheet.create({
         flex: 1,
         position: 'absolute',
         width: '100%',
-        height: COA_BANNER_SIZE,
+        height: coaBannerSize,
         zIndex: 2,
         justifyContent: 'center',
         resizeMode: 'cover',
@@ -123,7 +121,7 @@ const styles = StyleSheet.create({
         elevation: 14,
     },
     inputContainer: {
-        paddingTop: COA_BANNER_SIZE,
+        paddingTop: coaBannerSize,
         flex: 1,
         zIndex: 1,
         alignItems: 'center',

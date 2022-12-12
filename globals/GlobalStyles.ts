@@ -1,5 +1,7 @@
 import { StyleSheet } from 'react-native';
 
+const coaBannerSize = 150;
+
 const defaultMargin = 10;
 const defaultPadding = 10;
 const defaultBorderRadius = 16;
@@ -294,4 +296,4 @@ const globalStyles = StyleSheet.create({
     ...lighTextStyles,
 });
 
-export { globalStyles, defaultMargin, defaultPadding, defaultBorderRadius };
+export { globalStyles, defaultMargin, defaultPadding, defaultBorderRadius, coaBannerSize };

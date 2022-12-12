@@ -1,4 +1,4 @@
-import { getMe } from 'api/42ApiCall';
+import { getMe, getCoa } from 'api/42ApiCall';
 import PrimaryButton from 'components/PrimaryButton';
 import { Text, View } from 'components/Themed';
 import Env from 'config/Env';
@@ -51,19 +51,25 @@ export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLo
                 }),
             });
             let json_response = await response.json();
+            const access_token = json_response.access_token;
             dispatch(setUserLogged(true));
             dispatch(
                 setTokenData({
-                    accessToken: json_response.access_token,
+                    accessToken: access_token,
                     accessTokenCreatedAt: json_response.created_at,
                     accessTokenExpiresIn: json_response.expires_in,
                     refreshToken: json_response.refresh_token,
                 })
             );
-            json_response = getMe({ api_user_token: json_response.access_token });
-            const userCoalition = 'order';
-            const userLevel = '19.48';
-            const userLogin = 'maginist';
+            json_response = await getMe({ api_user_token: access_token });
+            const userLogin = json_response['login'];
+            const userLevel =
+                json_response['cursus_users'][json_response['cursus_users'].length - 1]['level'];
+            json_response = await getCoa({
+                id: json_response['id'],
+                api_user_token: access_token,
+            });
+            const userCoalition = json_response[json_response.length - 1]['name'];
 
             dispatch(
                 setUserInfos({

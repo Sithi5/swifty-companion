@@ -9,6 +9,8 @@ import React from 'react';
 import { ImageBackground, KeyboardAvoidingView, Platform, StyleSheet } from 'react-native';
 import * as Progress from 'react-native-progress';
 import { useAppSelector } from 'redux_toolkit/hooks';
+import { ListFormat } from 'typescript';
+import truncate from 'utils/truncate';
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -25,6 +27,7 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
     console.log('HOME PAGE');
     const user = useAppSelector((state) => state.user);
     const [text, onChangeText] = React.useState('');
+    const [error, setError] = React.useState('');
 
     const login = user.userInfos.userLogin;
     const level = user.userInfos.userLevel;
@@ -39,6 +42,8 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
             console.log('response_json = ', response_json);
             if (response_json != undefined) {
                 navigation.navigate('UserInfos', { userInfos: response_json });
+            } else {
+                setError('User ' + truncate(userLogin, 25) + ' not found.');
             }
         } catch (error) {
             console.error(error);
@@ -80,6 +85,7 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
                     source={require('../images/logo.png')}
                 ></ImageBackground>
 
+                <Text style={styles.text_error}>error : {error}</Text>
                 <TextInput
                     style={styles.input}
                     placeholder="Type user name"
@@ -147,5 +153,9 @@ const styles = StyleSheet.create({
     text: {
         paddingRight: 10,
         color: 'white',
+    },
+    text_error: {
+        paddingRight: 10,
+        color: 'red',
     },
 });

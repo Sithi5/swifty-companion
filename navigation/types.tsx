@@ -4,10 +4,11 @@
  */
 
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { UserResponseType } from 'api/42ApiTypes';
 
 export type RootStackParamList = {
     Home: undefined;
-    UserInfos: { userName: string };
+    UserInfos: { userInfos: UserResponseType };
     Modal: undefined;
     NotFound: undefined;
     OauthLogin: undefined;

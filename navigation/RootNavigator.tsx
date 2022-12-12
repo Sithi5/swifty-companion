@@ -19,11 +19,11 @@ export default function RootNavigator() {
         return (
             <Stack.Navigator
                 screenOptions={{
-                    headerShown: false,
+                    headerShown: true,
                 }}
                 initialRouteName={'Home'}
             >
-                <Stack.Screen name="Home" component={HomeScreen} />
+                <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
                 <Stack.Screen
                     name="NotFound"
                     component={NotFoundScreen}

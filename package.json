@@ -31,7 +31,7 @@
     "dotenv": "^16.0.3",
     "eslint-plugin-jest": "^27.0.4",
     "expo": "^46.0.0",
-    "expo-auth-session": "~3.7.1",
+    "expo-auth-session": "3.7.1",
     "expo-linear-gradient": "~11.4.0",
     "expo-linking": "~3.2.2",
     "expo-localization": "~13.1.0",

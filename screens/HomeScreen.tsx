@@ -19,6 +19,7 @@ const coalitionImages = {
     order: require('../images/order.jpg'),
     assembly: require('../images/assembly.jpg'),
     federation: require('../images/federation.jpg'),
+    unknown: require('../images/unknown.jpg'),
 };
 
 export default function Home({ navigation }: RootStackScreenProps<'Home'>) {

@@ -11,6 +11,7 @@ export type UserInfos = {
     userLogin: string;
     userLevel: string;
     userCoalition: string;
+    userImage: string;
 };
 
 export type UserState = {
@@ -31,6 +32,7 @@ const initialState: UserState = {
         userLogin: '',
         userLevel: '',
         userCoalition: '',
+        userImage: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alwancolor.com%2Faafbaejshop%2F2015%2F09%2F30%2Fstar-wars-the-force-awakens-first-order-stormtrooper-helmet%2F&psig=AOvVaw0paK91TOCylm8LsNV00lSL&ust=1671012713323000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOipucut9vsCFQAAAAAdAAAAABAT',
     },
 };
 
@@ -52,6 +54,9 @@ export const userSlice = createSlice({
         },
         setUserCoalition(state, action: PayloadAction<string>) {
             state.userInfos.userCoalition = action.payload;
+        },
+        setUserImage(state, action: PayloadAction<string>) {
+            state.userInfos.userImage = action.payload;
         },
         setUserAccessToken(state, action: PayloadAction<string>) {
             state.userTokenData.accessToken = action.payload;
@@ -80,6 +85,7 @@ export const {
     setUserAccessTokenExpiresIn,
     setTokenData,
     setUserInfos,
+    setUserImage,
     setUserLogin,
     setUserLevel,
     setUserCoalition,

@@ -6,7 +6,7 @@ import * as WebBrowser from 'expo-web-browser';
 import { globalStyles, coaBannerSize } from 'globals/GlobalStyles';
 import { RootStackScreenProps } from 'navigation/types';
 import React from 'react';
-import { ImageBackground, KeyboardAvoidingView, Platform, StyleSheet } from 'react-native';
+import { ImageBackground, KeyboardAvoidingView, Platform, StyleSheet, Image } from 'react-native';
 import * as Progress from 'react-native-progress';
 import { useAppSelector } from 'redux_toolkit/hooks';
 import truncate from 'utils/truncate';
@@ -65,6 +65,12 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
                 }
                 style={styles.coaContainer}
             >
+                <Image
+                    source={{
+                        uri: user.userInfos.userImage,
+                    }}
+                    style={styles.userImage}
+                />
                 <Text style={styles.text}>User : {login}</Text>
                 <Text style={styles.text}>Level: {level}</Text>
                 <View style={styles.barContainer}>
@@ -154,5 +160,12 @@ const styles = StyleSheet.create({
     text_error: {
         paddingRight: 10,
         color: 'red',
+    },
+    userImage: {
+        zIndex: 2,
+
+        width: 80,
+        height: 80,
+        borderRadius: 100,
     },
 });

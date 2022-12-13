@@ -6,7 +6,6 @@ export async function getUserByLogin(args: {
 }): Promise<undefined | GetUserByLoginResponseType> {
     const { api_user_token, login } = args;
     const url = 'https://api.intra.42.fr/v2/users/' + login;
-    console.log(url);
     const header = {
         'Content-Type': 'application/json',
         Authorization: 'Bearer ' + api_user_token,

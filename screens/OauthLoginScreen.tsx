@@ -65,6 +65,7 @@ export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLo
             const userLogin = json_response['login'];
             const userLevel =
                 json_response['cursus_users'][json_response['cursus_users'].length - 1]['level'];
+            const userImage = json_response['image']['link'];
             json_response = await getCoa({
                 id: json_response['id'],
                 api_user_token: access_token,
@@ -76,6 +77,7 @@ export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLo
                     userCoalition: userCoalition,
                     userLevel: userLevel,
                     userLogin: userLogin,
+                    userImage: userImage,
                 })
             );
 

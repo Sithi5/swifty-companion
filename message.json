@@ -1,0 +1,2742 @@
+{
+    "achievements": [
+        {
+            "description": "Logged for 24h straight",
+            "id": 40,
+            "image": "/uploads/achievement/image/40/SCO001.svg",
+            "kind": "scolarity",
+            "name": "404 - Sleep not found",
+            "nbr_of_success": null,
+            "tier": "easy",
+            "users_url": "https://api.intra.42.fr/v2/achievements/40/users",
+            "visible": true
+        },
+        {
+            "description": "Logged for a total of 90 hours over a week.",
+            "id": 41,
+            "image": "/uploads/achievement/image/41/SCO001.svg",
+            "kind": "scolarity",
+            "name": "All work and no play makes Jack a dull boy",
+            "nbr_of_success": null,
+            "tier": "easy",
+            "users_url": "https://api.intra.42.fr/v2/achievements/41/users",
+            "visible": true
+        },
+        {
+            "description": "Donated 1 evaluation point to the pool.",
+            "id": 169,
+            "image": "/uploads/achievement/image/169/BADGE_SCOLARITY_billgates.svg",
+            "kind": "scolarity",
+            "name": "Bill Gates",
+            "nbr_of_success": 2,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/169/users",
+            "visible": true
+        },
+        {
+            "description": "Donated 10 evaluation points to the pool.",
+            "id": 170,
+            "image": "/uploads/achievement/image/170/BADGE_SCOLARITY_billgates.svg",
+            "kind": "scolarity",
+            "name": "Bill Gates",
+            "nbr_of_success": 12,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/170/users",
+            "visible": true
+        },
+        {
+            "description": "Validated 1 project with the maximum score.",
+            "id": 17,
+            "image": "/uploads/achievement/image/17/PRO005.svg",
+            "kind": "project",
+            "name": "Bonus Hunter",
+            "nbr_of_success": 1,
+            "tier": "easy",
+            "users_url": "https://api.intra.42.fr/v2/achievements/17/users",
+            "visible": true
+        },
+        {
+            "description": "Validated 3 projects with the maximum score.",
+            "id": 18,
+            "image": "/uploads/achievement/image/18/PRO005.svg",
+            "kind": "project",
+            "name": "Bonus Hunter",
+            "nbr_of_success": 3,
+            "tier": "medium",
+            "users_url": "https://api.intra.42.fr/v2/achievements/18/users",
+            "visible": true
+        },
+        {
+            "description": "Validated 10 projets with the maximum score.",
+            "id": 19,
+            "image": "/uploads/achievement/image/19/PRO005.svg",
+            "kind": "project",
+            "name": "Bonus Hunter",
+            "nbr_of_success": 10,
+            "tier": "hard",
+            "users_url": "https://api.intra.42.fr/v2/achievements/19/users",
+            "visible": true
+        },
+        {
+            "description": "Validated 21 projet with the maximum score.",
+            "id": 20,
+            "image": "/uploads/achievement/image/20/PRO005.svg",
+            "kind": "project",
+            "name": "Bonus Hunter",
+            "nbr_of_success": 21,
+            "tier": "challenge",
+            "users_url": "https://api.intra.42.fr/v2/achievements/20/users",
+            "visible": true
+        },
+        {
+            "description": "Valided your first project.",
+            "id": 4,
+            "image": "/uploads/achievement/image/4/PRO002.svg",
+            "kind": "project",
+            "name": "Code Explorer",
+            "nbr_of_success": 1,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/4/users",
+            "visible": true
+        },
+        {
+            "description": "Validated 3 projects",
+            "id": 5,
+            "image": "/uploads/achievement/image/5/PRO002.svg",
+            "kind": "project",
+            "name": "Code Explorer",
+            "nbr_of_success": 3,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/5/users",
+            "visible": true
+        },
+        {
+            "description": "Validated 10 projects.",
+            "id": 6,
+            "image": "/uploads/achievement/image/6/PRO002.svg",
+            "kind": "project",
+            "name": "Code Explorer",
+            "nbr_of_success": 10,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/6/users",
+            "visible": true
+        },
+        {
+            "description": "Validated 21 projects.",
+            "id": 7,
+            "image": "/uploads/achievement/image/7/PRO002.svg",
+            "kind": "project",
+            "name": "Code Explorer",
+            "nbr_of_success": 21,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/7/users",
+            "visible": true
+        },
+        {
+            "description": "Validated 42 projets.",
+            "id": 8,
+            "image": "/uploads/achievement/image/8/PRO002.svg",
+            "kind": "project",
+            "name": "Code Explorer",
+            "nbr_of_success": 42,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/8/users",
+            "visible": true
+        },
+        {
+            "description": "S'être logué une fois dans chaque cluster.",
+            "id": 44,
+            "image": "/uploads/achievement/image/44/SCO002.svg",
+            "kind": "scolarity",
+            "name": "Curious wanderer",
+            "nbr_of_success": null,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/44/users",
+            "visible": false
+        },
+        {
+            "description": "Watched 1 video from the e-learning.",
+            "id": 46,
+            "image": "/uploads/achievement/image/46/PED005.svg",
+            "kind": "pedagogy",
+            "name": "Film buff",
+            "nbr_of_success": 1,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/46/users",
+            "visible": true
+        },
+        {
+            "description": "Watched 3 videos from the e-learning.",
+            "id": 47,
+            "image": "/uploads/achievement/image/47/PED005.svg",
+            "kind": "pedagogy",
+            "name": "Film buff",
+            "nbr_of_success": 3,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/47/users",
+            "visible": true
+        },
+        {
+            "description": "Watched 10 videos from the e-learning.",
+            "id": 48,
+            "image": "/uploads/achievement/image/48/PED005.svg",
+            "kind": "pedagogy",
+            "name": "Film buff",
+            "nbr_of_success": 10,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/48/users",
+            "visible": true
+        },
+        {
+            "description": "Watched 21 videos from the e-learning.",
+            "id": 49,
+            "image": "/uploads/achievement/image/49/PED005.svg",
+            "kind": "pedagogy",
+            "name": "Film buff",
+            "nbr_of_success": 21,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/49/users",
+            "visible": true
+        },
+        {
+            "description": "S'être logué dans le même cluster un mois de suite.",
+            "id": 45,
+            "image": "/uploads/achievement/image/45/SCO002.svg",
+            "kind": "scolarity",
+            "name": "Home is where the code is",
+            "nbr_of_success": null,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/45/users",
+            "visible": true
+        },
+        {
+            "description": "Made a defense without having validated the project.",
+            "id": 82,
+            "image": "/uploads/achievement/image/82/PED011.svg",
+            "kind": "pedagogy",
+            "name": "I have no idea what I'm doing",
+            "nbr_of_success": null,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/82/users",
+            "visible": true
+        },
+        {
+            "description": "Participated in 21 defenses in a row without missing any.",
+            "id": 84,
+            "image": "/uploads/achievement/image/84/PED009.svg",
+            "kind": "pedagogy",
+            "name": "I'm reliable !",
+            "nbr_of_success": 21,
+            "tier": "easy",
+            "users_url": "https://api.intra.42.fr/v2/achievements/84/users",
+            "visible": true
+        },
+        {
+            "description": "Collected 100 wallet points.",
+            "id": 36,
+            "image": "/uploads/achievement/image/36/SOC004.svg",
+            "kind": "social",
+            "name": "It's a rich man's world",
+            "nbr_of_success": 100,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/36/users",
+            "visible": true
+        },
+        {
+            "description": "Collected 200 wallet points.",
+            "id": 37,
+            "image": "/uploads/achievement/image/37/SOC004.svg",
+            "kind": "social",
+            "name": "It's a rich man's world",
+            "nbr_of_success": 200,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/37/users",
+            "visible": true
+        },
+        {
+            "description": "Collected 500 wallet points.",
+            "id": 38,
+            "image": "/uploads/achievement/image/38/SOC004.svg",
+            "kind": "social",
+            "name": "It's a rich man's world",
+            "nbr_of_success": 500,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/38/users",
+            "visible": true
+        },
+        {
+            "description": "Visited 42 campus in Paris.",
+            "id": 155,
+            "image": "/uploads/achievement/image/155/BADGE_SCOLARITY_paris.svg",
+            "kind": "scolarity",
+            "name": "Je voudrais un croissant",
+            "nbr_of_success": null,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/155/users",
+            "visible": true
+        },
+        {
+            "description": "Validated 3 projects in a row (Piscine days included).",
+            "id": 25,
+            "image": "/uploads/achievement/image/25/PRO010.svg",
+            "kind": "project",
+            "name": "Rigorous Basterd",
+            "nbr_of_success": 3,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/25/users",
+            "visible": true
+        },
+        {
+            "description": "Validated 10 projects in a row (Piscine days included).",
+            "id": 26,
+            "image": "/uploads/achievement/image/26/PRO010.svg",
+            "kind": "project",
+            "name": "Rigorous Basterd",
+            "nbr_of_success": 10,
+            "tier": "easy",
+            "users_url": "https://api.intra.42.fr/v2/achievements/26/users",
+            "visible": true
+        },
+        {
+            "description": "Validated 21 projects in a row (Piscine days included).",
+            "id": 27,
+            "image": "/uploads/achievement/image/27/PRO010.svg",
+            "kind": "project",
+            "name": "Rigorous Basterd",
+            "nbr_of_success": 21,
+            "tier": "medium",
+            "users_url": "https://api.intra.42.fr/v2/achievements/27/users",
+            "visible": true
+        },
+        {
+            "description": "Valider les projets Snow Crash, Rainfall et Override avec une note minimum de 100.",
+            "id": 148,
+            "image": "/uploads/achievement/image/148/PRO-shellcodefordummies.svg",
+            "kind": "project",
+            "name": "Shellcode for dummies",
+            "nbr_of_success": null,
+            "tier": "medium",
+            "users_url": "https://api.intra.42.fr/v2/achievements/148/users",
+            "visible": true
+        },
+        {
+            "description": "Conquered the achievements \"404 - Sleep not found\" and \"All work and no play makes Jack a dull boy\"",
+            "id": 39,
+            "image": "/uploads/achievement/image/39/SCO001.svg",
+            "kind": "scolarity",
+            "name": "Sleep is for the weak",
+            "nbr_of_success": null,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/39/users",
+            "visible": true
+        },
+        {
+            "description": "Valider le projet Boot2root avec une note minimum de 100.",
+            "id": 146,
+            "image": "/uploads/achievement/image/146/PRO-the-lockpicker.svg",
+            "kind": "project",
+            "name": "The Lockpicker",
+            "nbr_of_success": null,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/146/users",
+            "visible": true
+        },
+        {
+            "description": "You have passed the C Piscine! Welcome to 42!",
+            "id": 1,
+            "image": "/uploads/achievement/image/1/PRO001.svg",
+            "kind": "project",
+            "name": "Welcome, Cadet !",
+            "nbr_of_success": null,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/1/users",
+            "visible": true
+        },
+        {
+            "description": "Tu as réussi ta piscine C. Bienvenue à 42 !",
+            "id": 218,
+            "image": "/uploads/achievement/image/218/PRO001-2.svg",
+            "kind": "project",
+            "name": "Welcome, Learner !",
+            "nbr_of_success": null,
+            "tier": "none",
+            "users_url": "https://api.intra.42.fr/v2/achievements/218/users",
+            "visible": true
+        }
+    ],
+    "active?": true,
+    "alumni?": false,
+    "alumnized_at": null,
+    "anonymize_date": "2025-12-12T00:00:00.000+01:00",
+    "campus": [
+        {
+            "active": true,
+            "address": "96, boulevard Bessières",
+            "city": "Paris",
+            "country": "France",
+            "default_hidden_phone": false,
+            "email_extension": "42.fr",
+            "facebook": "https://facebook.com/42born2code",
+            "id": 1,
+            "language": [Object
+            ],
+            "name": "Paris",
+            "public": true,
+            "time_zone": "Europe/Paris",
+            "twitter": "https://twitter.com/42born2code",
+            "users_count": 25048,
+            "vogsphere_id": 1,
+            "website": "http://www.42.fr/",
+            "zip": "75017"
+        }
+    ],
+    "campus_users": [
+        {
+            "campus_id": 1,
+            "created_at": "2018-06-21T08:47:03.318Z",
+            "id": 28069,
+            "is_primary": true,
+            "updated_at": "2018-06-21T08:47:03.318Z",
+            "user_id": 37642
+        }
+    ],
+    "correction_point": 5,
+    "created_at": "2018-06-21T08:47:03.291Z",
+    "cursus_users": [
+        {
+            "begin_at": "2018-11-05T08:28:00.000Z",
+            "blackholed_at": null,
+            "created_at": "2018-08-13T13:42:01.376Z",
+            "cursus": [Object
+            ],
+            "cursus_id": 1,
+            "end_at": "2021-01-15T00:00:00.000Z",
+            "grade": "Commander",
+            "has_coalition": true,
+            "id": 44550,
+            "level": 12.37,
+            "skills": [Array
+            ],
+            "updated_at": "2021-01-16T05:49:14.832Z",
+            "user": [Object
+            ]
+        },
+        {
+            "begin_at": "2018-07-02T05:42:00.000Z",
+            "blackholed_at": null,
+            "created_at": "2018-06-21T08:47:03.366Z",
+            "cursus": [Object
+            ],
+            "cursus_id": 6,
+            "end_at": "2018-07-28T08:00:00.000Z",
+            "grade": null,
+            "has_coalition": true,
+            "id": 39075,
+            "level": 9.81,
+            "skills": [Array
+            ],
+            "updated_at": "2018-07-01T22:03:15.374Z",
+            "user": [Object
+            ]
+        },
+        {
+            "begin_at": "2018-11-05T08:28:00.000Z",
+            "blackholed_at": null,
+            "created_at": "2021-01-16T05:48:57.065Z",
+            "cursus": [Object
+            ],
+            "cursus_id": 21,
+            "end_at": null,
+            "grade": "Member",
+            "has_coalition": true,
+            "id": 109495,
+            "level": 20.4,
+            "skills": [Array
+            ],
+            "updated_at": "2021-01-16T05:48:57.065Z",
+            "user": [Object
+            ]
+        }
+    ],
+    "data_erasure_date": "2025-12-12T00:00:00.000+01:00",
+    "displayname": "Malo Boucé",
+    "email": "mabouce@student.42.fr",
+    "expertises_users": [
+        {
+            "contact_me": false,
+            "created_at": "2022-06-03T07:49:55.989Z",
+            "expertise_id": 26,
+            "id": 72726,
+            "interested": true,
+            "user_id": 37642,
+            "value": 3
+        },
+        {
+            "contact_me": false,
+            "created_at": "2022-06-03T07:49:30.183Z",
+            "expertise_id": 47,
+            "id": 72725,
+            "interested": true,
+            "user_id": 37642,
+            "value": 4
+        },
+        {
+            "contact_me": false,
+            "created_at": "2022-06-03T07:42:18.584Z",
+            "expertise_id": 36,
+            "id": 72723,
+            "interested": false,
+            "user_id": 37642,
+            "value": 4
+        },
+        {
+            "contact_me": false,
+            "created_at": "2022-06-03T07:42:06.544Z",
+            "expertise_id": 16,
+            "id": 72722,
+            "interested": false,
+            "user_id": 37642,
+            "value": 3
+        },
+        {
+            "contact_me": false,
+            "created_at": "2022-06-03T07:42:00.279Z",
+            "expertise_id": 8,
+            "id": 72721,
+            "interested": false,
+            "user_id": 37642,
+            "value": 3
+        },
+        {
+            "contact_me": false,
+            "created_at": "2022-06-03T07:41:44.815Z",
+            "expertise_id": 19,
+            "id": 72720,
+            "interested": false,
+            "user_id": 37642,
+            "value": 5
+        },
+        {
+            "contact_me": false,
+            "created_at": "2022-06-03T07:41:26.530Z",
+            "expertise_id": 67,
+            "id": 72719,
+            "interested": true,
+            "user_id": 37642,
+            "value": 5
+        },
+        {
+            "contact_me": false,
+            "created_at": "2021-08-16T09:43:21.892Z",
+            "expertise_id": 40,
+            "id": 58748,
+            "interested": false,
+            "user_id": 37642,
+            "value": 3
+        },
+        {
+            "contact_me": false,
+            "created_at": "2021-07-09T15:14:34.423Z",
+            "expertise_id": 38,
+            "id": 56611,
+            "interested": false,
+            "user_id": 37642,
+            "value": 3
+        },
+        {
+            "contact_me": false,
+            "created_at": "2021-07-09T13:16:48.482Z",
+            "expertise_id": 30,
+            "id": 56586,
+            "interested": true,
+            "user_id": 37642,
+            "value": 5
+        },
+        {
+            "contact_me": false,
+            "created_at": "2021-07-09T13:16:34.263Z",
+            "expertise_id": 34,
+            "id": 56585,
+            "interested": true,
+            "user_id": 37642,
+            "value": 4
+        },
+        {
+            "contact_me": false,
+            "created_at": "2021-07-09T13:16:25.096Z",
+            "expertise_id": 6,
+            "id": 56584,
+            "interested": true,
+            "user_id": 37642,
+            "value": 5
+        }
+    ],
+    "first_name": "Malo",
+    "groups": [
+        {
+            "id": 72,
+            "name": "Launchpad Alumni"
+        }
+    ],
+    "id": 37642,
+    "image": {
+        "link": "https://cdn.intra.42.fr/users/a42794d5bdcd2f735626fb9def3cd633/mabouce.jpg",
+        "versions": {
+            "large": "https://cdn.intra.42.fr/users/e23cb0f211a09312412546bc7f95e00a/large_mabouce.jpg",
+            "medium": "https://cdn.intra.42.fr/users/a28f3a14605ac2cd42d8f1c92ee1dbe6/medium_mabouce.jpg",
+            "micro": "https://cdn.intra.42.fr/users/43759bb1393f567716b24086e00efecd/micro_mabouce.jpg",
+            "small": "https://cdn.intra.42.fr/users/208f68b881b9c49d49211896d07df859/small_mabouce.jpg"
+        }
+    },
+    "kind": "student",
+    "languages_users": [
+        {
+            "created_at": "2022-01-05T12:42:34.400Z",
+            "id": 476003,
+            "language_id": 1,
+            "position": 1,
+            "user_id": 37642
+        },
+        {
+            "created_at": "2022-01-05T12:42:34.433Z",
+            "id": 476004,
+            "language_id": 2,
+            "position": 2,
+            "user_id": 37642
+        }
+    ],
+    "last_name": "Boucé",
+    "location": null,
+    "login": "mabouce",
+    "partnerships": [],
+    "patroned": [
+        {
+            "created_at": "2018-11-12T16:02:45.703Z",
+            "godfather_id": 25900,
+            "id": 1633,
+            "ongoing": true,
+            "updated_at": "2022-07-14T06:54:45.291Z",
+            "user_id": 37642
+        }
+    ],
+    "patroning": [],
+    "phone": "hidden",
+    "pool_month": "july",
+    "pool_year": "2018",
+    "projects_users": [
+        {
+            "created_at": "2022-09-05T09:09:22.308Z",
+            "current_team_id": 4387280,
+            "cursus_ids": [Array
+            ],
+            "final_mark": null,
+            "id": 2766623,
+            "marked": false,
+            "marked_at": null,
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": null,
+            "status": "in_progress",
+            "updated_at": "2022-09-05T09:11:52.784Z",
+            "validated?": null
+        },
+        {
+            "created_at": "2022-07-04T08:09:05.846Z",
+            "current_team_id": 4338503,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 2645342,
+            "marked": true,
+            "marked_at": "2022-09-03T14:35:43.259Z",
+            "occurrence": 1,
+            "project": [Object
+            ],
+            "retriable_at": "2022-09-06T14:35:43.576Z",
+            "status": "finished",
+            "updated_at": "2022-09-03T14:35:44.288Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2022-08-16T18:10:17.860Z",
+            "current_team_id": 4328602,
+            "cursus_ids": [Array
+            ],
+            "final_mark": null,
+            "id": 2726546,
+            "marked": false,
+            "marked_at": null,
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": null,
+            "status": "creating_group",
+            "updated_at": "2022-08-16T18:10:17.860Z",
+            "validated?": null
+        },
+        {
+            "created_at": "2022-05-18T11:23:41.704Z",
+            "current_team_id": 4137374,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 2593447,
+            "marked": true,
+            "marked_at": "2022-06-03T12:51:37.023Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": null,
+            "status": "finished",
+            "updated_at": "2022-06-03T12:51:37.065Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2022-05-30T08:29:29.405Z",
+            "current_team_id": 4152911,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 2604319,
+            "marked": true,
+            "marked_at": "2022-05-30T08:32:46.813Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2022-05-30T08:32:47.044Z",
+            "status": "finished",
+            "updated_at": "2022-05-30T08:33:46.833Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2022-05-30T08:23:45.849Z",
+            "current_team_id": 4152899,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 2604308,
+            "marked": true,
+            "marked_at": "2022-05-30T08:27:28.652Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2022-05-30T08:27:28.964Z",
+            "status": "finished",
+            "updated_at": "2022-05-30T08:28:16.393Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2022-05-18T15:22:10.896Z",
+            "current_team_id": 4137820,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 2593786,
+            "marked": true,
+            "marked_at": "2022-05-30T08:20:53.830Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2022-05-30T08:20:54.053Z",
+            "status": "finished",
+            "updated_at": "2022-05-30T08:20:54.073Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2022-05-18T11:23:42.194Z",
+            "current_team_id": 4137375,
+            "cursus_ids": [Array
+            ],
+            "final_mark": null,
+            "id": 2593448,
+            "marked": false,
+            "marked_at": null,
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": null,
+            "status": "waiting_for_correction",
+            "updated_at": "2022-05-18T11:23:42.432Z",
+            "validated?": null
+        },
+        {
+            "created_at": "2022-05-18T11:23:41.136Z",
+            "current_team_id": 4137373,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 2593446,
+            "marked": true,
+            "marked_at": "2022-05-18T11:23:41.555Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2022-05-18T11:23:41.620Z",
+            "status": "finished",
+            "updated_at": "2022-05-18T11:23:41.651Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2022-03-07T14:32:16.758Z",
+            "current_team_id": 4137372,
+            "cursus_ids": [Array
+            ],
+            "final_mark": null,
+            "id": 2524069,
+            "marked": false,
+            "marked_at": null,
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": null,
+            "status": "in_progress",
+            "updated_at": "2022-05-18T11:23:21.670Z",
+            "validated?": null
+        },
+        {
+            "created_at": "2021-07-01T17:37:02.678Z",
+            "current_team_id": 3628685,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 2225238,
+            "marked": true,
+            "marked_at": "2022-05-03T10:08:27.020Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2022-05-06T10:08:27.288Z",
+            "status": "finished",
+            "updated_at": "2022-05-03T10:08:27.311Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-09-27T08:40:18.294Z",
+            "current_team_id": 3808320,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 2356149,
+            "marked": true,
+            "marked_at": "2021-10-07T13:41:55.880Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-10-10T13:41:56.239Z",
+            "status": "finished",
+            "updated_at": "2021-10-07T13:41:56.259Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-08-31T14:03:52.729Z",
+            "current_team_id": 3757054,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 2318824,
+            "marked": true,
+            "marked_at": "2021-09-29T10:13:29.520Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-10-02T10:13:29.865Z",
+            "status": "finished",
+            "updated_at": "2021-09-29T10:13:30.220Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-07-26T09:55:03.057Z",
+            "current_team_id": 3756601,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 2264160,
+            "marked": true,
+            "marked_at": "2021-09-09T17:02:38.390Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-09-12T17:02:38.705Z",
+            "status": "finished",
+            "updated_at": "2021-09-09T17:02:39.172Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-07-07T17:42:30.265Z",
+            "current_team_id": 3643629,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 2236151,
+            "marked": true,
+            "marked_at": "2021-07-13T18:08:17.668Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-07-16T18:08:18.031Z",
+            "status": "finished",
+            "updated_at": "2021-07-13T18:08:18.057Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-07-07T10:31:50.120Z",
+            "current_team_id": 3641703,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 2234685,
+            "marked": true,
+            "marked_at": "2021-07-07T17:42:12.614Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-07-10T17:42:12.641Z",
+            "status": "finished",
+            "updated_at": "2021-07-07T17:42:12.660Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-07-02T14:14:30.509Z",
+            "current_team_id": 3629906,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 2226206,
+            "marked": true,
+            "marked_at": "2021-07-07T10:31:35.152Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-07-10T10:31:35.195Z",
+            "status": "finished",
+            "updated_at": "2021-07-07T10:31:35.217Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-03-16T15:59:58.405Z",
+            "current_team_id": 3628327,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 2131306,
+            "marked": true,
+            "marked_at": "2021-07-13T17:21:21.632Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-07-16T17:21:22.244Z",
+            "status": "finished",
+            "updated_at": "2021-07-13T17:21:22.751Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-03-11T13:40:50.449Z",
+            "current_team_id": 3513561,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 2126740,
+            "marked": true,
+            "marked_at": "2021-07-02T14:14:16.608Z",
+            "occurrence": 1,
+            "project": [Object
+            ],
+            "retriable_at": "2021-07-05T14:14:16.651Z",
+            "status": "finished",
+            "updated_at": "2021-07-02T14:14:16.671Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-03-10T11:18:16.364Z",
+            "current_team_id": 3498988,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 2125286,
+            "marked": true,
+            "marked_at": "2021-03-11T13:39:59.155Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-03-14T13:39:59.186Z",
+            "status": "finished",
+            "updated_at": "2021-03-11T13:39:59.202Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-03-09T17:39:35.331Z",
+            "current_team_id": 3497628,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 2124127,
+            "marked": true,
+            "marked_at": "2021-03-10T11:18:06.478Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-03-13T11:18:06.510Z",
+            "status": "finished",
+            "updated_at": "2021-03-10T11:18:06.529Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-03-05T13:54:49.777Z",
+            "current_team_id": 3491365,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 2119774,
+            "marked": true,
+            "marked_at": "2021-03-09T17:39:16.901Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-03-12T17:39:16.926Z",
+            "status": "finished",
+            "updated_at": "2021-03-09T17:39:16.941Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-02-23T14:56:05.021Z",
+            "current_team_id": 3476685,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 2108743,
+            "marked": true,
+            "marked_at": "2021-03-05T13:54:35.349Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-03-08T13:54:35.381Z",
+            "status": "finished",
+            "updated_at": "2021-03-05T13:54:35.405Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-02-22T18:27:03.792Z",
+            "current_team_id": 3474659,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 2107181,
+            "marked": true,
+            "marked_at": "2021-02-23T14:55:43.220Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-02-26T14:55:43.243Z",
+            "status": "finished",
+            "updated_at": "2021-02-23T14:55:43.257Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-02-22T14:02:22.242Z",
+            "current_team_id": 3474252,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 2106916,
+            "marked": true,
+            "marked_at": "2021-03-04T15:30:08.393Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-03-07T15:30:08.711Z",
+            "status": "finished",
+            "updated_at": "2021-03-04T15:30:09.153Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-02-08T14:10:24.589Z",
+            "current_team_id": 3457363,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 2090142,
+            "marked": true,
+            "marked_at": "2021-02-22T14:01:22.164Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-02-25T14:01:22.598Z",
+            "status": "finished",
+            "updated_at": "2021-02-22T14:01:23.095Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-01-20T12:28:59.231Z",
+            "current_team_id": 3432873,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 2073567,
+            "marked": true,
+            "marked_at": "2021-02-08T14:08:29.418Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-02-11T14:08:29.738Z",
+            "status": "finished",
+            "updated_at": "2021-02-08T14:08:29.755Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-01-16T17:19:32.991Z",
+            "current_team_id": 3428703,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 2069393,
+            "marked": true,
+            "marked_at": "2021-02-11T15:02:29.705Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-02-14T15:02:29.988Z",
+            "status": "finished",
+            "updated_at": "2021-02-11T15:02:30.003Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-01-16T17:19:19.310Z",
+            "current_team_id": 3443442,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 124,
+            "id": 2069392,
+            "marked": true,
+            "marked_at": "2021-02-04T15:03:39.683Z",
+            "occurrence": 1,
+            "project": [Object
+            ],
+            "retriable_at": "2021-02-07T15:03:40.001Z",
+            "status": "finished",
+            "updated_at": "2021-02-04T15:03:40.019Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-01-16T05:49:09.872Z",
+            "current_team_id": 3426406,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 118,
+            "id": 2069171,
+            "marked": true,
+            "marked_at": "2019-10-24T19:07:58.000Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-01-16T05:49:09.872Z",
+            "status": "finished",
+            "updated_at": "2021-01-16T05:49:09.872Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-01-16T05:49:06.383Z",
+            "current_team_id": 3426405,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 2069170,
+            "marked": true,
+            "marked_at": "2020-04-14T11:52:48.000Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-01-16T05:49:06.383Z",
+            "status": "finished",
+            "updated_at": "2021-01-16T05:49:06.383Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-01-16T05:49:06.283Z",
+            "current_team_id": 3426404,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 2069169,
+            "marked": true,
+            "marked_at": "2020-04-14T11:52:48.000Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-01-16T05:49:06.283Z",
+            "status": "finished",
+            "updated_at": "2021-01-16T05:49:06.283Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-01-16T05:49:06.127Z",
+            "current_team_id": 3426403,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 118,
+            "id": 2069168,
+            "marked": true,
+            "marked_at": "2020-04-14T11:52:48.000Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-01-16T05:49:06.127Z",
+            "status": "finished",
+            "updated_at": "2021-01-16T05:49:06.127Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-01-16T05:49:06.065Z",
+            "current_team_id": 3426402,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 2069167,
+            "marked": true,
+            "marked_at": "2020-04-14T11:52:48.000Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-01-16T05:49:06.065Z",
+            "status": "finished",
+            "updated_at": "2021-01-16T05:49:06.065Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-01-16T05:49:06.008Z",
+            "current_team_id": 3426401,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 2069166,
+            "marked": true,
+            "marked_at": "2020-04-14T11:52:48.000Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-01-16T05:49:06.008Z",
+            "status": "finished",
+            "updated_at": "2021-01-16T05:49:06.008Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-01-16T05:49:05.947Z",
+            "current_team_id": 3426400,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 2069165,
+            "marked": true,
+            "marked_at": "2020-04-14T11:52:48.000Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-01-16T05:49:05.947Z",
+            "status": "finished",
+            "updated_at": "2021-01-16T05:49:05.947Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-01-16T05:49:00.993Z",
+            "current_team_id": 3426399,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 96,
+            "id": 2069164,
+            "marked": true,
+            "marked_at": "2019-05-17T18:01:26.000Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-01-16T05:49:00.993Z",
+            "status": "finished",
+            "updated_at": "2021-01-16T05:49:00.993Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-01-16T05:49:00.805Z",
+            "current_team_id": 3426398,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 99,
+            "id": 2069163,
+            "marked": true,
+            "marked_at": "2019-03-10T20:08:37.000Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-01-16T05:49:00.805Z",
+            "status": "finished",
+            "updated_at": "2021-01-16T05:49:00.805Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-01-16T05:48:59.601Z",
+            "current_team_id": 3426397,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 2069162,
+            "marked": true,
+            "marked_at": "2019-10-08T12:51:22.000Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-01-16T05:48:59.601Z",
+            "status": "finished",
+            "updated_at": "2021-01-16T05:48:59.601Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2020-12-02T10:58:15.206Z",
+            "current_team_id": 3397043,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 2049281,
+            "marked": true,
+            "marked_at": "2021-01-06T17:57:40.629Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-01-06T17:57:42.398Z",
+            "status": "finished",
+            "updated_at": "2021-01-06T17:57:42.417Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2020-05-28T11:50:09.430Z",
+            "current_team_id": 3204559,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 1905421,
+            "marked": true,
+            "marked_at": "2020-11-23T10:58:32.431Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": null,
+            "status": "finished",
+            "updated_at": "2020-11-23T10:58:32.469Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2020-05-28T11:50:09.116Z",
+            "current_team_id": 3204558,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 118,
+            "id": 1905420,
+            "marked": true,
+            "marked_at": "2020-09-09T10:06:49.941Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": null,
+            "status": "finished",
+            "updated_at": "2020-09-09T10:06:49.981Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2020-05-28T11:50:08.801Z",
+            "current_team_id": 3204557,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 1905419,
+            "marked": true,
+            "marked_at": "2020-05-28T11:50:09.066Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": null,
+            "status": "finished",
+            "updated_at": "2020-05-28T11:50:09.098Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2020-05-28T11:50:08.484Z",
+            "current_team_id": 3204556,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 1905418,
+            "marked": true,
+            "marked_at": "2020-05-28T11:50:08.737Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2020-05-28T11:50:08.768Z",
+            "status": "finished",
+            "updated_at": "2020-05-28T11:50:08.782Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2020-04-14T11:52:48.366Z",
+            "current_team_id": 3195914,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 1899310,
+            "marked": true,
+            "marked_at": "2021-01-06T17:57:40.918Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2021-01-06T17:57:42.356Z",
+            "status": "finished",
+            "updated_at": "2021-01-06T17:57:42.374Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2019-11-07T12:17:02.230Z",
+            "current_team_id": 2884426,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 1621445,
+            "marked": true,
+            "marked_at": "2019-11-09T14:27:07.832Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2019-11-10T14:27:08.229Z",
+            "status": "finished",
+            "updated_at": "2020-03-27T06:45:10.678Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2019-07-12T12:23:52.967Z",
+            "current_team_id": 2645714,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 118,
+            "id": 1432365,
+            "marked": true,
+            "marked_at": "2019-10-24T19:07:58.687Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2019-10-28T20:07:59.172Z",
+            "status": "finished",
+            "updated_at": "2020-03-26T16:15:51.134Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2019-07-08T08:52:58.364Z",
+            "current_team_id": 2753171,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 1403347,
+            "marked": true,
+            "marked_at": "2019-08-28T13:33:23.415Z",
+            "occurrence": 1,
+            "project": [Object
+            ],
+            "retriable_at": "2019-08-31T13:33:24.143Z",
+            "status": "finished",
+            "updated_at": "2020-03-26T22:48:12.137Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2019-05-22T14:40:47.982Z",
+            "current_team_id": 2561429,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 1355269,
+            "marked": true,
+            "marked_at": "2019-10-08T12:51:22.564Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2019-10-15T12:51:22.932Z",
+            "status": "finished",
+            "updated_at": "2020-03-26T09:01:44.854Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2019-04-07T22:04:06.666Z",
+            "current_team_id": 2508004,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 1320023,
+            "marked": true,
+            "marked_at": "2019-04-07T22:04:07.915Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2019-04-07T22:04:08.540Z",
+            "status": "finished",
+            "updated_at": "2020-03-26T06:50:55.438Z",
+            "validated?": false
+        },
+        {
+            "created_at": "2019-04-07T21:20:41.324Z",
+            "current_team_id": 2509225,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 96,
+            "id": 1319528,
+            "marked": true,
+            "marked_at": "2019-05-17T18:01:26.157Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2019-05-24T18:01:26.478Z",
+            "status": "finished",
+            "updated_at": "2020-03-26T06:55:25.242Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2019-04-02T09:29:43.852Z",
+            "current_team_id": 2498870,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 30,
+            "id": 1312286,
+            "marked": true,
+            "marked_at": "2019-04-17T13:37:32.928Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2019-04-17T13:37:33.504Z",
+            "status": "finished",
+            "updated_at": "2020-03-26T06:26:54.975Z",
+            "validated?": false
+        },
+        {
+            "created_at": "2019-04-01T14:58:57.417Z",
+            "current_team_id": 2497465,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 1311118,
+            "marked": true,
+            "marked_at": "2019-04-17T14:35:11.075Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2019-04-17T14:35:11.610Z",
+            "status": "finished",
+            "updated_at": "2020-03-26T06:23:23.188Z",
+            "validated?": false
+        },
+        {
+            "created_at": "2019-04-01T14:58:47.898Z",
+            "current_team_id": 2497463,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 55,
+            "id": 1311116,
+            "marked": true,
+            "marked_at": "2019-04-05T16:09:13.668Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2019-04-05T16:09:14.076Z",
+            "status": "finished",
+            "updated_at": "2020-03-26T06:23:20.706Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2019-03-30T10:30:21.244Z",
+            "current_team_id": 2494516,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 1308633,
+            "marked": true,
+            "marked_at": "2019-04-17T14:35:26.174Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2019-04-17T14:35:27.360Z",
+            "status": "finished",
+            "updated_at": "2020-03-26T05:24:26.960Z",
+            "validated?": false
+        },
+        {
+            "created_at": "2019-03-30T10:30:14.580Z",
+            "current_team_id": 2494515,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 55,
+            "id": 1308632,
+            "marked": true,
+            "marked_at": "2019-04-04T11:57:14.874Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2019-04-04T11:57:15.179Z",
+            "status": "finished",
+            "updated_at": "2020-03-26T05:24:36.899Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2019-03-27T10:30:29.715Z",
+            "current_team_id": 2493975,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 119,
+            "id": 1306918,
+            "marked": true,
+            "marked_at": "2019-04-06T17:34:36.217Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2019-04-06T17:34:36.841Z",
+            "status": "finished",
+            "updated_at": "2020-03-26T05:21:41.307Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2019-03-26T13:36:22.499Z",
+            "current_team_id": 2491212,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 1305813,
+            "marked": true,
+            "marked_at": "2019-04-05T13:27:48.007Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2019-04-05T13:27:48.514Z",
+            "status": "finished",
+            "updated_at": "2020-03-26T05:11:04.766Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2019-03-26T13:33:59.118Z",
+            "current_team_id": 2491209,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 1305809,
+            "marked": true,
+            "marked_at": "2019-04-05T12:23:47.052Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2019-04-05T12:23:47.450Z",
+            "status": "finished",
+            "updated_at": "2020-03-26T05:11:03.434Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2019-03-25T09:58:46.104Z",
+            "current_team_id": 2487577,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 60,
+            "id": 1302861,
+            "marked": true,
+            "marked_at": "2019-03-29T10:33:30.847Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2019-03-29T10:33:31.336Z",
+            "status": "finished",
+            "updated_at": "2020-03-26T05:02:03.642Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2019-03-23T15:34:43.799Z",
+            "current_team_id": 2486053,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 87,
+            "id": 1301566,
+            "marked": true,
+            "marked_at": "2019-03-28T14:36:58.387Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2019-03-28T14:36:58.812Z",
+            "status": "finished",
+            "updated_at": "2020-03-26T04:50:28.593Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2019-03-22T11:56:10.441Z",
+            "current_team_id": 2484393,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 90,
+            "id": 1300154,
+            "marked": true,
+            "marked_at": "2019-03-27T09:44:55.727Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2019-03-27T09:44:56.205Z",
+            "status": "finished",
+            "updated_at": "2020-03-26T04:45:56.695Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2019-03-22T11:26:51.072Z",
+            "current_team_id": 2484372,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 92,
+            "id": 1300138,
+            "marked": true,
+            "marked_at": "2019-04-17T14:35:26.523Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2019-04-17T14:35:27.288Z",
+            "status": "finished",
+            "updated_at": "2019-04-17T14:35:27.333Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2019-01-16T12:26:58.511Z",
+            "current_team_id": 2476180,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 99,
+            "id": 1196973,
+            "marked": true,
+            "marked_at": "2019-03-10T20:08:37.882Z",
+            "occurrence": 1,
+            "project": [Object
+            ],
+            "retriable_at": "2019-03-14T20:08:38.617Z",
+            "status": "finished",
+            "updated_at": "2020-03-26T04:31:42.682Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-12-10T12:41:06.031Z",
+            "current_team_id": 2355210,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 1179612,
+            "marked": true,
+            "marked_at": "2019-01-17T13:28:26.473Z",
+            "occurrence": 1,
+            "project": [Object
+            ],
+            "retriable_at": "2019-01-20T13:28:27.338Z",
+            "status": "finished",
+            "updated_at": "2020-03-26T00:40:05.570Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-11-29T09:29:29.574Z",
+            "current_team_id": 2345589,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 98,
+            "id": 1177043,
+            "marked": true,
+            "marked_at": "2018-12-18T17:32:34.792Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-12-22T17:32:35.107Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T23:54:16.796Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-11-29T09:28:33.039Z",
+            "current_team_id": 2345587,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 94,
+            "id": 1177042,
+            "marked": true,
+            "marked_at": "2018-12-06T19:45:24.384Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-12-07T19:45:25.155Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T23:54:02.982Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-11-15T13:57:49.873Z",
+            "current_team_id": 2345411,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 1171918,
+            "marked": true,
+            "marked_at": "2018-11-28T20:08:28.457Z",
+            "occurrence": 1,
+            "project": [Object
+            ],
+            "retriable_at": "2018-11-30T20:08:28.748Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T23:53:56.214Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-11-13T14:24:56.899Z",
+            "current_team_id": 2335992,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 106,
+            "id": 1171212,
+            "marked": true,
+            "marked_at": "2018-11-15T13:34:14.661Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-11-16T13:34:15.071Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T23:15:32.030Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-11-06T15:44:37.037Z",
+            "current_team_id": 2335646,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 125,
+            "id": 1167808,
+            "marked": true,
+            "marked_at": "2018-11-13T14:24:35.590Z",
+            "occurrence": 1,
+            "project": [Object
+            ],
+            "retriable_at": "2018-11-14T14:24:36.133Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T23:14:17.906Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-11-05T12:54:16.657Z",
+            "current_team_id": 2370342,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 80,
+            "id": 1166295,
+            "marked": true,
+            "marked_at": "2019-01-29T09:39:32.024Z",
+            "occurrence": 8,
+            "project": [Object
+            ],
+            "retriable_at": "2019-01-29T09:39:32.586Z",
+            "status": "finished",
+            "updated_at": "2019-01-29T09:46:09.821Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-11-05T12:53:29.317Z",
+            "current_team_id": 2330879,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 1166292,
+            "marked": true,
+            "marked_at": "2018-11-06T15:37:26.695Z",
+            "occurrence": 3,
+            "project": [Object
+            ],
+            "retriable_at": "2018-11-06T15:37:27.018Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T22:26:27.398Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-11-05T12:17:02.290Z",
+            "current_team_id": 2328533,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 1166089,
+            "marked": true,
+            "marked_at": "2018-11-05T12:52:35.662Z",
+            "occurrence": 2,
+            "project": [Object
+            ],
+            "retriable_at": "2018-11-05T12:52:35.689Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T21:57:26.896Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-24T22:31:02.041Z",
+            "current_team_id": 2085847,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 54,
+            "id": 949961,
+            "marked": true,
+            "marked_at": "2018-07-27T10:50:03.554Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-27T09:56:56.804Z",
+            "status": "finished",
+            "updated_at": "2018-07-27T10:50:03.554Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-20T14:42:17.005Z",
+            "current_team_id": 2080457,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 60,
+            "id": 937628,
+            "marked": true,
+            "marked_at": "2018-07-24T19:56:44.344Z",
+            "occurrence": 1,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-24T19:56:44.310Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T04:44:27.179Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-19T08:46:11.142Z",
+            "current_team_id": 2066183,
+            "cursus_ids": [Array
+            ],
+            "final_mark": -42,
+            "id": 933905,
+            "marked": true,
+            "marked_at": "2018-07-28T00:20:56.364Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T00:20:56.337Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T03:55:53.892Z",
+            "validated?": false
+        },
+        {
+            "created_at": "2018-07-19T06:03:41.127Z",
+            "current_team_id": 2065443,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 933222,
+            "marked": true,
+            "marked_at": "2018-07-23T22:12:43.847Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-23T22:12:43.827Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T03:53:59.889Z",
+            "validated?": false
+        },
+        {
+            "created_at": "2018-07-17T19:33:53.311Z",
+            "current_team_id": 2062179,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 929351,
+            "marked": true,
+            "marked_at": "2018-07-26T12:27:34.539Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-26T12:27:34.376Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T03:38:31.791Z",
+            "validated?": false
+        },
+        {
+            "created_at": "2018-07-17T19:33:25.606Z",
+            "current_team_id": 2072223,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 929341,
+            "marked": true,
+            "marked_at": "2018-07-24T13:05:08.021Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-24T13:05:07.438Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T04:17:48.647Z",
+            "validated?": false
+        },
+        {
+            "created_at": "2018-07-17T17:53:51.911Z",
+            "current_team_id": 2060862,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 70,
+            "id": 929019,
+            "marked": true,
+            "marked_at": "2018-07-20T18:58:53.598Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-20T18:22:21.976Z",
+            "status": "finished",
+            "updated_at": "2018-07-20T18:58:53.598Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-17T15:20:34.634Z",
+            "current_team_id": 2070325,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 928450,
+            "marked": true,
+            "marked_at": "2018-07-20T14:30:46.260Z",
+            "occurrence": 2,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-20T14:30:46.219Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T04:12:35.737Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-16T21:25:39.863Z",
+            "current_team_id": 2064089,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 926928,
+            "marked": true,
+            "marked_at": "2018-07-18T19:53:40.861Z",
+            "occurrence": 2,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-18T19:53:40.824Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T03:49:34.105Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-11T21:35:20.265Z",
+            "current_team_id": 2059334,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 913995,
+            "marked": true,
+            "marked_at": "2018-07-17T14:46:41.968Z",
+            "occurrence": 2,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-17T14:46:41.929Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T03:24:12.076Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T20:32:51.720Z",
+            "current_team_id": 2035197,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 905427,
+            "marked": true,
+            "marked_at": "2018-07-28T08:15:46.694Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:15:46.948Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:15:47.187Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T20:32:32.026Z",
+            "current_team_id": 2035195,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 905425,
+            "marked": true,
+            "marked_at": "2018-07-16T07:31:56.602Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-16T07:31:56.550Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T02:16:00.064Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T20:31:59.691Z",
+            "current_team_id": 2053768,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 905421,
+            "marked": true,
+            "marked_at": "2018-07-17T11:14:36.506Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-17T11:14:35.782Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T02:59:02.347Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T20:31:45.695Z",
+            "current_team_id": 2035191,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 75,
+            "id": 905419,
+            "marked": true,
+            "marked_at": "2018-07-13T18:39:49.784Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-13T17:57:40.005Z",
+            "status": "finished",
+            "updated_at": "2018-07-13T18:39:49.784Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T17:33:09.221Z",
+            "current_team_id": 2058023,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 904120,
+            "marked": true,
+            "marked_at": "2018-07-16T19:54:39.563Z",
+            "occurrence": 3,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-16T19:54:39.533Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T03:19:29.975Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:47:06.541Z",
+            "current_team_id": 2030273,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900671,
+            "marked": true,
+            "marked_at": "2018-07-28T08:15:48.683Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:15:48.826Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:15:49.172Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:46:54.040Z",
+            "current_team_id": 2030270,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900668,
+            "marked": true,
+            "marked_at": "2018-07-28T08:15:50.500Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:15:50.758Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:15:50.967Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:46:41.932Z",
+            "current_team_id": 2030267,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900665,
+            "marked": true,
+            "marked_at": "2018-07-28T08:15:52.617Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:15:52.835Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:15:53.057Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:46:17.536Z",
+            "current_team_id": 2030253,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900651,
+            "marked": true,
+            "marked_at": "2018-07-28T08:15:54.537Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:15:54.736Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:15:54.956Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:45:58.698Z",
+            "current_team_id": 2030245,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900643,
+            "marked": true,
+            "marked_at": "2018-07-28T08:15:56.383Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:15:56.630Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:15:56.976Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:45:45.420Z",
+            "current_team_id": 2030243,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900641,
+            "marked": true,
+            "marked_at": "2018-07-28T08:15:58.463Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:15:58.653Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:15:58.972Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:45:29.185Z",
+            "current_team_id": 2030238,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900636,
+            "marked": true,
+            "marked_at": "2018-07-28T08:16:00.440Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:16:00.816Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:16:00.958Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:45:15.756Z",
+            "current_team_id": 2030235,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900633,
+            "marked": true,
+            "marked_at": "2018-07-28T08:16:02.479Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:16:02.739Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:16:03.008Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:44:59.432Z",
+            "current_team_id": 2030229,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900627,
+            "marked": true,
+            "marked_at": "2018-07-28T08:16:04.326Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:16:04.545Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:16:04.715Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:44:44.315Z",
+            "current_team_id": 2030223,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900621,
+            "marked": true,
+            "marked_at": "2018-07-28T08:16:06.392Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:16:06.650Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:16:06.777Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:44:31.753Z",
+            "current_team_id": 2030220,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900618,
+            "marked": true,
+            "marked_at": "2018-07-28T08:16:08.507Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:16:08.792Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:16:09.167Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:44:14.204Z",
+            "current_team_id": 2030213,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900612,
+            "marked": true,
+            "marked_at": "2018-07-28T08:16:11.027Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:16:11.206Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:16:11.592Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:44:02.969Z",
+            "current_team_id": 2030210,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900609,
+            "marked": true,
+            "marked_at": "2018-07-28T08:16:13.693Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:16:13.940Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:16:14.281Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:43:43.924Z",
+            "current_team_id": 2030205,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900605,
+            "marked": true,
+            "marked_at": "2018-07-28T08:16:15.935Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:16:16.276Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:16:16.661Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:43:31.332Z",
+            "current_team_id": 2030203,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900603,
+            "marked": true,
+            "marked_at": "2018-07-28T08:16:18.949Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:16:19.199Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:16:19.370Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:43:16.323Z",
+            "current_team_id": 2030198,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900598,
+            "marked": true,
+            "marked_at": "2018-07-28T08:16:21.277Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:16:21.571Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:16:21.883Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:43:00.141Z",
+            "current_team_id": 2030196,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900596,
+            "marked": true,
+            "marked_at": "2018-07-28T08:16:23.544Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:16:23.706Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:16:23.993Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:42:42.900Z",
+            "current_team_id": 2030192,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900593,
+            "marked": true,
+            "marked_at": "2018-07-28T08:16:25.245Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:16:25.516Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:16:25.932Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:42:32.164Z",
+            "current_team_id": 2030189,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900590,
+            "marked": true,
+            "marked_at": "2018-07-28T08:16:27.865Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:16:28.303Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:16:28.573Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:42:13.030Z",
+            "current_team_id": 2030186,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900587,
+            "marked": true,
+            "marked_at": "2018-07-28T08:16:30.784Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:16:31.040Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:16:31.231Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:41:54.808Z",
+            "current_team_id": 2030183,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900584,
+            "marked": true,
+            "marked_at": "2018-07-28T08:16:33.293Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:16:33.577Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:16:33.979Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:41:43.385Z",
+            "current_team_id": 2030180,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900581,
+            "marked": true,
+            "marked_at": "2018-07-28T08:16:35.607Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:16:35.756Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:16:35.954Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-10T12:41:31.649Z",
+            "current_team_id": 2030177,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 0,
+            "id": 900578,
+            "marked": true,
+            "marked_at": "2018-07-28T08:16:37.582Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-28T08:16:37.732Z",
+            "status": "finished",
+            "updated_at": "2018-07-28T08:16:37.858Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-09T17:12:42.216Z",
+            "current_team_id": 2025115,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 34,
+            "id": 895760,
+            "marked": true,
+            "marked_at": "2018-07-14T12:05:39.765Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-14T12:05:39.732Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T01:53:37.280Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-05T18:29:14.287Z",
+            "current_team_id": 2035031,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 891577,
+            "marked": true,
+            "marked_at": "2018-07-11T08:44:23.632Z",
+            "occurrence": 1,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-11T08:44:23.596Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T02:15:40.180Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-05T18:28:30.601Z",
+            "current_team_id": 2029372,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 83,
+            "id": 891574,
+            "marked": true,
+            "marked_at": "2018-07-10T16:19:22.959Z",
+            "occurrence": 2,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-10T16:19:22.925Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T02:04:46.692Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-04T17:22:12.638Z",
+            "current_team_id": 2016697,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 890285,
+            "marked": true,
+            "marked_at": "2018-07-05T17:13:55.313Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-05T17:13:55.264Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T00:35:40.624Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-04T08:56:45.582Z",
+            "current_team_id": 2017127,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 889618,
+            "marked": true,
+            "marked_at": "2018-07-05T09:03:13.960Z",
+            "occurrence": 2,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-05T09:03:13.918Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T00:41:06.359Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-04T06:25:08.453Z",
+            "current_team_id": 2015251,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 889252,
+            "marked": true,
+            "marked_at": "2018-07-09T10:49:15.884Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-09T10:49:15.834Z",
+            "status": "finished",
+            "updated_at": "2020-03-20T05:58:32.759Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-03T19:42:23.289Z",
+            "current_team_id": 2020113,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 120,
+            "id": 888693,
+            "marked": true,
+            "marked_at": "2018-07-10T14:44:41.716Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-10T14:44:41.676Z",
+            "status": "finished",
+            "updated_at": "2020-03-25T01:16:20.846Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-03T19:41:55.979Z",
+            "current_team_id": 2014736,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 888692,
+            "marked": true,
+            "marked_at": "2018-07-06T16:58:10.775Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-06T16:58:02.024Z",
+            "status": "finished",
+            "updated_at": "2018-07-06T16:58:10.775Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-03T11:56:07.873Z",
+            "current_team_id": 2013592,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 887828,
+            "marked": true,
+            "marked_at": "2018-07-04T14:52:31.576Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-04T14:52:31.520Z",
+            "status": "finished",
+            "updated_at": "2020-03-20T05:49:16.003Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-02T07:03:28.530Z",
+            "current_team_id": 2013874,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 885020,
+            "marked": true,
+            "marked_at": "2018-07-03T19:39:40.017Z",
+            "occurrence": 1,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-03T19:39:39.978Z",
+            "status": "finished",
+            "updated_at": "2020-03-20T05:51:06.561Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2018-07-02T06:55:30.626Z",
+            "current_team_id": 2009939,
+            "cursus_ids": [Array
+            ],
+            "final_mark": 100,
+            "id": 884991,
+            "marked": true,
+            "marked_at": "2018-07-04T14:20:36.592Z",
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": "2018-07-02T20:26:04.459Z",
+            "status": "finished",
+            "updated_at": "2020-03-20T05:24:14.201Z",
+            "validated?": true
+        },
+        {
+            "created_at": "2021-11-05T14:20:09.572Z",
+            "current_team_id": 3871187,
+            "cursus_ids": [Array
+            ],
+            "final_mark": null,
+            "id": 2399884,
+            "marked": false,
+            "marked_at": null,
+            "occurrence": 0,
+            "project": [Object
+            ],
+            "retriable_at": null,
+            "status": "in_progress",
+            "updated_at": "2021-11-05T15:05:06.275Z",
+            "validated?": null
+        }
+    ],
+    "roles": [],
+    "staff?": false,
+    "titles": [
+        {
+            "id": 21,
+            "name": "%login, Khonvoum"
+        }
+    ],
+    "titles_users": [
+        {
+            "created_at": "2022-05-30T08:27:29.211Z",
+            "id": 11919,
+            "selected": true,
+            "title_id": 21,
+            "updated_at": "2022-06-04T16:41:04.460Z",
+            "user_id": 37642
+        }
+    ],
+    "updated_at": "2022-12-12T16:06:19.425Z",
+    "url": "https://api.intra.42.fr/v2/users/mabouce",
+    "usual_first_name": null,
+    "usual_full_name": "Malo Boucé",
+    "wallet": 465
+}

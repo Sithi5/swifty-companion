@@ -5,7 +5,6 @@ export async function getUserByLogin(args: {
     login: string;
 }): Promise<undefined | UserResponseType> {
     const { api_user_token, login } = args;
-    console.log('login = ', login);
     const url = 'https://api.intra.42.fr/v2/users?filter[login]=' + login;
     const urlId = 'https://api.intra.42.fr/v2/users/';
     const header = {
@@ -32,7 +31,6 @@ export async function getUserByLogin(args: {
 
 export async function getMe(args: { api_user_token: string }) {
     const { api_user_token } = args;
-    console.log('user_token = ', api_user_token);
     const url = 'https://api.intra.42.fr/v2/me?access_token=';
     const header = {
         'Content-Type': 'application/json',
@@ -52,20 +50,17 @@ export async function getMe(args: { api_user_token: string }) {
 
 export async function getCoa(args: { id: number; api_user_token: string }) {
     const { id, api_user_token } = args;
-    console.log('user_token = ', api_user_token);
     const url = 'https://api.intra.42.fr/v2/users/' + id + '/coalitions?access_token=';
     const header = {
         'Content-Type': 'application/json',
         Authorization: 'Bearer ' + api_user_token,
     };
-    console.log(url, api_user_token);
     try {
         const response = await fetch(url, {
             method: 'GET',
             headers: header,
         });
         const json_response = await response.json();
-        console.log(json_response);
         return json_response;
     } catch (error) {
         console.error(error);

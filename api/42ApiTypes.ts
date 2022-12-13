@@ -12,6 +12,12 @@ type Versions = {
     small: string;
 };
 
+type Cursus = {
+    level: number;
+    grade: string;
+    cursus_id: number;
+};
+
 type UserResponseType = {
     active?: Nullable<boolean>;
     alumni?: Nullable<boolean>;
@@ -38,6 +44,7 @@ type UserResponseType = {
     usual_first_name: null;
     usual_full_name: Nullable<string>;
     wallet: Nullable<number>;
+    cursus: Cursus;
 };
 
 type UsersResponseType = [UserResponseType];

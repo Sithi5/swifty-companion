@@ -1,21 +1,18 @@
 import { Route } from '@react-navigation/native';
-import { getUserByLogin, getCoa, getAllUserData } from 'api/42ApiCall';
-
-import { LinearGradient } from 'expo-linear-gradient';
-import * as Progress from 'react-native-progress';
+import { getUserByLogin, getCoa } from 'api/42ApiCall';
 
 import { Text, View } from 'components/Themed';
+import { LinearGradient } from 'expo-linear-gradient';
 import * as WebBrowser from 'expo-web-browser';
-import { globalStyles } from 'globals/GlobalStyles';
+import { globalStyles, coaBannerSize } from 'globals/GlobalStyles';
 import { RootStackScreenProps } from 'navigation/types';
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, ImageBackground, KeyboardAvoidingView, Platform, Image } from 'react-native';
 import { useAppSelector } from 'redux_toolkit/hooks';
+import * as Progress from 'react-native-progress';
 
 WebBrowser.maybeCompleteAuthSession();
 
-const API_USER_BASE_URL = 'https://api.intra.42.fr/v2/users/';
-const COA_BANNER_SIZE = 150;
 const coalitionImages = {
     alliance: require('../images/alliance.jpg'),
     order: require('../images/order.jpg'),
@@ -29,8 +26,8 @@ export default function UserInfosScreen({ route }: RootStackScreenProps<'UserInf
     const { userInfos } = route.params;
     console.log(userInfos);
     const login = userInfos.login;
-    const level = '10.0';
-    const levelbar = '0.' + level.toString().slice(-2);
+    const level = userInfos.userLevel;
+    const levelbar = '0.' + level.toString().split('.')[1]
     const user = useAppSelector((state) => state.user);
     const [userCoalition, setUserCoalition] = React.useState('');
 
@@ -80,7 +77,7 @@ export default function UserInfosScreen({ route }: RootStackScreenProps<'UserInf
                     }}
                     style={styles.userImage}
                 />
-                <Text style={styles.text}>User : {login}</Text>
+                <Text style={styles.text}>Loging : {login}</Text>
                 <Text style={styles.text}>Level: {level}</Text>
                 <View style={styles.barContainer}>
                     <Progress.Bar progress={parseFloat(levelbar)} />
@@ -103,18 +100,16 @@ export default function UserInfosScreen({ route }: RootStackScreenProps<'UserInf
 const styles = StyleSheet.create({
     mainContainer: { flex: 1 },
     firstContainer: {
-        paddingTop: COA_BANNER_SIZE,
+        paddingTop: coaBannerSize,
         flex: 1,
         zIndex: 1,
         alignItems: 'center',
     },
-    // picture: {
-    // },
     coaContainer: {
         flex: 1,
         position: 'absolute',
         width: '100%',
-        height: COA_BANNER_SIZE,
+        height: coaBannerSize,
         zIndex: 2,
         justifyContent: 'center',
         resizeMode: 'cover',
@@ -126,10 +121,6 @@ const styles = StyleSheet.create({
         shadowOpacity: 11,
         shadowRadius: 14,
         elevation: 14,
-    },
-    title: {
-        color: 'white',
-        fontSize: globalStyles.h1.fontSize,
     },
     input: {
         height: 40,

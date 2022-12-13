@@ -12,7 +12,7 @@ type Versions = {
     small: string;
 };
 
-type UserResponseType = {
+type GetUserByLoginResponseType = {
     active?: Nullable<boolean>;
     alumni?: Nullable<boolean>;
     alumnized_at: Nullable<string>;
@@ -40,6 +40,4 @@ type UserResponseType = {
     wallet: 465;
 };
 
-type UsersResponseType = [UserResponseType];
-
-export type { UserResponseType, UsersResponseType };
+export type { GetUserByLoginResponseType };

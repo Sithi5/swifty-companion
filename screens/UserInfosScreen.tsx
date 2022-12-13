@@ -24,7 +24,6 @@ export default function UserInfosScreen({ route }: RootStackScreenProps<'UserInf
     console.log(userInfos);
 
     const user = useAppSelector((state) => state.user);
-    console.log('userInfos ', userInfos);
     const level = user.userInfos.userLevel;
     const levelbar = '0.' + level.toString().split('.')[1];
 

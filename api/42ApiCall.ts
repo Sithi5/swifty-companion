@@ -35,6 +35,8 @@ export async function getMe(args: { api_user_token: string }) {
             headers: header,
         });
         const json_response = await response.json();
+        console.log(json_response);
+
         return json_response;
     } catch (error) {
         console.error(error);

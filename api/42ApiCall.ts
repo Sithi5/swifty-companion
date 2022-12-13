@@ -1,28 +1,22 @@
-import { UserResponseType } from './42ApiTypes';
+import { GetUserByLoginResponseType } from './42ApiTypes';
 
 export async function getUserByLogin(args: {
     api_user_token: string;
     login: string;
-}): Promise<undefined | UserResponseType> {
+}): Promise<undefined | GetUserByLoginResponseType> {
     const { api_user_token, login } = args;
-    const url = 'https://api.intra.42.fr/v2/users?filter[login]=' + login;
-    const urlId = 'https://api.intra.42.fr/v2/users/';
+    const url = 'https://api.intra.42.fr/v2/users/' + login;
+    console.log(url);
     const header = {
         'Content-Type': 'application/json',
         Authorization: 'Bearer ' + api_user_token,
     };
     try {
-        let response = await fetch(url, {
+        const response = await fetch(url, {
             method: 'GET',
             headers: header,
         });
-        let json_response = await response.json();
-        response = await fetch(urlId + json_response[0]['id'], {
-            method: 'GET',
-            headers: header,
-        });
-        json_response = await response.json();
-        console.log('\njson_response ', json_response);
+        const json_response = response.json();
         return json_response;
     } catch (error) {
         console.error(error);

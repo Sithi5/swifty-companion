@@ -29,7 +29,6 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
 
     const login = user.userInfos.userLogin;
     const level = user.userInfos.userLevel;
-    console.log("level.toString().split('.')[1]", level.toString().split('.')[1]);
     const levelbar = '0.' + level.toString().split('.')[1];
 
     async function getUser(userLogin: string) {
@@ -38,7 +37,6 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
                 api_user_token: user.userTokenData.accessToken,
                 login: userLogin.toLowerCase(),
             });
-            console.log('response_json = ', response_json);
             if (response_json != undefined) {
                 navigation.navigate('UserInfos', { userInfos: response_json });
             } else {

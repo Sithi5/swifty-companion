@@ -18,7 +18,7 @@ type Cursus = {
     cursus_id: number;
 };
 
-type UserResponseType = {
+type GetUserByLoginResponseType = {
     active?: Nullable<boolean>;
     alumni?: Nullable<boolean>;
     alumnized_at: Nullable<string>;
@@ -47,6 +47,4 @@ type UserResponseType = {
     cursus: Cursus;
 };
 
-type UsersResponseType = [UserResponseType];
-
-export type { UserResponseType, UsersResponseType };
+export type { GetUserByLoginResponseType };

@@ -27,7 +27,7 @@ export default function UserInfosScreen({ route }: RootStackScreenProps<'UserInf
     console.log(userInfos);
     const login = userInfos.login;
     const level = userInfos.userLevel;
-    const levelbar = '0.' + level.toString().split('.')[1]
+    const levelbar = '0.' + level.toString().split('.')[1];
     const user = useAppSelector((state) => state.user);
     const [userCoalition, setUserCoalition] = React.useState('');
 

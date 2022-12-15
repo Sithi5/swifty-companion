@@ -15,7 +15,7 @@ export async function getUserByLogin(args: {
             method: 'GET',
             headers: header,
         });
-        const json_response = response.json();
+        const json_response = await response.json();
         return json_response;
     } catch (error) {
         console.error(error);

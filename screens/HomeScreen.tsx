@@ -6,10 +6,11 @@ import * as WebBrowser from 'expo-web-browser';
 import { globalStyles, coaBannerSize } from 'globals/GlobalStyles';
 import { RootStackScreenProps } from 'navigation/types';
 import React from 'react';
-import { ImageBackground, KeyboardAvoidingView, Platform, StyleSheet } from 'react-native';
+import { ImageBackground, KeyboardAvoidingView, StyleSheet } from 'react-native';
 import * as Progress from 'react-native-progress';
 import { useAppSelector } from 'redux_toolkit/hooks';
 import truncate from 'utils/truncate';
+import * as Device from 'expo-device';
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -32,12 +33,12 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
 
     async function getUser(userLogin: string) {
         try {
-            const response_json = await getUserByLogin({
+            const json_response = await getUserByLogin({
                 api_user_token: user.userTokenData.accessToken,
                 login: userLogin.toLowerCase(),
             });
-            if (response_json != undefined) {
-                navigation.navigate('UserInfos', { userInfos: response_json });
+            if (json_response != undefined) {
+                navigation.navigate('UserInfos', { userInfos: json_response });
             } else {
                 setError("error : User '" + truncate(userLogin, 25) + "' not found.");
             }
@@ -50,7 +51,7 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
         <KeyboardAvoidingView
             enabled={true}
             style={styles.mainContainer}
-            behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+            behavior={Device.osName?.toLowerCase() === 'ios' ? 'padding' : 'height'}
         >
             <ImageBackground
                 source={

@@ -13,11 +13,13 @@ import React from 'react';
 import { Image, StyleSheet } from 'react-native';
 import { useAppDispatch } from 'redux_toolkit/hooks';
 import { setTokenData, setUserInfos, setUserLogged } from 'redux_toolkit/UserSlice';
+import truncate from 'utils/truncate';
 
 WebBrowser.maybeCompleteAuthSession();
 
 export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLogin'>) {
     const dispatch = useAppDispatch();
+    const [error, setError] = React.useState('');
 
     const discovery = { authorizationEndpoint: 'https://api.intra.42.fr/oauth/authorize' };
     const redirectUrl = Linking.createURL('/');
@@ -50,7 +52,17 @@ export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLo
                     state: state,
                 }),
             });
-            let json_response = await response.json();
+            let json_response;
+            if (response.status === 401) {
+                try {
+                    json_response = await response.json();
+                } catch {
+                    json_response = 'undefined';
+                }
+                throw 'Error with the oauth call: ' + json_response.error;
+            }
+            json_response = await response.json();
+            console.log('response.status', response.status);
             const access_token = json_response.access_token;
             dispatch(setUserLogged(true));
             dispatch(
@@ -61,25 +73,29 @@ export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLo
                     refreshToken: json_response.refresh_token,
                 })
             );
-            json_response = await getMe({ api_user_token: access_token });
-            const userLogin = json_response['login'];
-            const userLevel =
-                json_response['cursus_users'][json_response['cursus_users'].length - 1]['level'];
-            json_response = await getCoa({
-                id: json_response['id'],
-                api_user_token: access_token,
-            });
-            const userCoalition = json_response[json_response.length - 1]['name'];
+            if (json_response !== undefined) {
+                json_response = await getMe({ api_user_token: access_token });
+                const userLogin = json_response['login'];
+                const userLevel =
+                    json_response['cursus_users'][json_response['cursus_users'].length - 1][
+                        'level'
+                    ];
+                json_response = await getCoa({
+                    id: json_response['id'],
+                    api_user_token: access_token,
+                });
+                const userCoalition = json_response[json_response.length - 1]['name'];
 
-            dispatch(
-                setUserInfos({
-                    userCoalition: userCoalition,
-                    userLevel: userLevel,
-                    userLogin: userLogin,
-                })
-            );
+                dispatch(
+                    setUserInfos({
+                        userCoalition: userCoalition,
+                        userLevel: userLevel,
+                        userLogin: userLogin,
+                    })
+                );
 
-            navigation.navigate('Home');
+                navigation.navigate('Home');
+            }
         } catch (error) {
             console.error(error);
         }
@@ -106,7 +122,7 @@ export default function OauthLogin({ navigation }: RootStackScreenProps<'OauthLo
                     style={{ resizeMode: 'cover', width: 350, height: 290 }}
                     source={require('../images/logo.png')}
                 ></Image>
-                <Text></Text>
+                <Text style={styles.text_error}>{error}</Text>
                 <PrimaryButton text="Log in with 42" onPressFunction={promptAsync}></PrimaryButton>
             </LinearGradient>
         </View>
@@ -123,5 +139,9 @@ const styles = StyleSheet.create({
     title: {
         color: 'white',
         fontSize: globalStyles.h1.fontSize,
+    },
+    text_error: {
+        paddingRight: 10,
+        color: 'red',
     },
 });
